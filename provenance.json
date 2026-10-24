@@ -1,0 +1,26 @@
+{
+  "base_standard004": {
+    "path": "session006-auk-standard-delivery-004.zip",
+    "bytes": 55298361,
+    "sha256": "b9cbb0f9989b59cc10bfe9b6b9686534e1f8ba8a96baf25219659feb7facb5b7",
+    "files": 352
+  },
+  "frozen_candidate004": {
+    "path": "session006-auk-port-cpu-004.zip",
+    "bytes": 972888,
+    "sha256": "f087c025de08e7f764118d44f187ff7de78e9ca265539a89d353b18b95c0bdfb",
+    "files": 326
+  },
+  "remote_originals": {
+    "path": "000-session006-auk-results001.zip",
+    "bytes": 251876,
+    "sha256": "0b7172198eb446bf875457c3441f089e7715f800e19153aaaf21b002c09e98ba",
+    "files": 63
+  },
+  "actual_pilot_prefix": "auk004/a3e59176c8456dbbefd89b2189cb4165/",
+  "base_source_and_cpu_wheels_preserved": true,
+  "historical_standard004_readme": "historical/standard004-README.md",
+  "standard_wrapper_GPU_rerun": false,
+  "audit_script_command": "python -B tools/audit_auk_pilot006_actual.py --pilot-dir evidence/remote-originals/auk004/a3e59176c8456dbbefd89b2189cb4165/ --source-archive archives/session006-auk-port-cpu-004.zip --protocol candidate/protocol.py --output new-pilot004-audit.json",
+  "scope": "Development reproduction and actual004 evidence; final competition submission is user-owned"
+}

@@ -1,0 +1,82 @@
+INFO 10-24 00:25:10 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-24 00:25:10 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-24 00:25:10 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-24 00:25:11 [__init__.py:239] Platform plugin hcu is activated
+{
+  "schema": "mobilevla-native-api-processor-probe006-v1",
+  "started_utc": "2026-10-23T16:24:52.476378+00:00",
+  "source": "/root/private_data/guoxin-candidates/models/mobilevla-r1-rl006/weight/rl",
+  "model_weights_loaded": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "status": "passed_api_and_cpu_processor_only",
+  "native_source_files": {
+    "mobilevla_bw006.backend": {
+      "path": "/root/private_data/guoxin-mobilevla-tools-006-002/candidates/mobilevla-r1-session006/mobilevla_bw006/backend.py",
+      "sha256": "29b3acdd56ca533b15baaa9409ceb9a40e0cfc1a29a4234df2afd0991557c104"
+    },
+    "vllm.model_executor.models.llava": {
+      "path": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/llava.py",
+      "sha256": "d4ac2f99f96b51cbe2d3c09be0f72b6e8a3a27bc91ad4a424e587e3101615a9b"
+    },
+    "vllm.model_executor.models.siglip": {
+      "path": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/siglip.py",
+      "sha256": "7e5495036d87ce48c20cf5b085e7faf4cd353eba7cf981120f06c80d7a577b24"
+    },
+    "vllm.model_executor.model_loader.default_loader": {
+      "path": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/model_loader/default_loader.py",
+      "sha256": "1be5d0050149866076430fd98ab3360edf7f88da1e3a722397acb45df9cf4626"
+    },
+    "vllm.multimodal.processing.processor": {
+      "path": "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/processing/processor.py",
+      "sha256": "900283f4fabd65449ac76b8a08d3d8e546321d4c88d046c3d510cfc5fabde1bf"
+    }
+  },
+  "vllm.platform_plugins": [
+    {
+      "name": "hcu",
+      "value": "vllm_hcu:hcu_platform_plugin"
+    }
+  ],
+  "vllm.general_plugins": [
+    {
+      "name": "mobilevla_bw006",
+      "value": "mobilevla_bw006:register"
+    },
+    {
+      "name": "lora_filesystem_resolver",
+      "value": "vllm.plugins.lora_resolvers.filesystem_resolver:register_filesystem_resolver"
+    },
+    {
+      "name": "lora_hf_hub_resolver",
+      "value": "vllm.plugins.lora_resolvers.hf_hub_resolver:register_hf_hub_resolver"
+    },
+    {
+      "name": "hcu_ops",
+      "value": "vllm_hcu:hcu_platform_register_ops"
+    }
+  ],
+  "component_config_types": {
+    "root": "LlavaConfig",
+    "text": "LlamaConfig",
+    "vision": "SiglipVisionConfig"
+  },
+  "actual_processor": {
+    "pixel_shape": [
+      2,
+      3,
+      384,
+      384
+    ],
+    "pixels_equal_reference": true,
+    "input_ids_equal_source": true,
+    "image_sentinel_count": 2,
+    "tokens_per_frame": 196,
+    "hf_processor_applies_updates": false
+  },
+  "secondary_source_native_constructor": {
+    "type": "Source",
+    "prefix": "vision_tower."
+  },
+  "ended_utc": "2026-10-23T16:25:24.209337+00:00"
+}

@@ -1,0 +1,31 @@
+
+=== run 95a9c6002ec36822475d889bfd3738a3 at 2026-10-23T16:41:03.340659+00:00 ===
+["/root/private_data/guoxin-auk-port006/venv002/bin/python", "-B", "/root/private_data/guoxin-auk-port006-003/serve.py", "--model-path", "/root/private_data/guoxin-candidates/models/auk006", "--encoder-path", "/root/private_data/guoxin-candidates/models/qwen25-omni3b006", "--runtime-dir", "/root/private_data/guoxin-auk-port006-003/runtime/pipeline-95a9c6002ec36822475d889bfd3738a3", "--port", "30139"]
+Failed to import mooncake: No module named 'mooncake'. MooncakeRelay will not work. Install with: pip install mooncake-transfer-engine
+Failed to import nixl: No module named 'nixl'. NixlRelay will not work.
+Traceback (most recent call last):
+  File "/root/private_data/guoxin-auk-port006-003/serve.py", line 61, in <module>
+    if __name__=="__main__":raise SystemExit(main())
+  File "/root/private_data/guoxin-auk-port006-003/serve.py", line 58, in main
+    launch_server(config,host="127.0.0.1",port=args.port,model_name="tencent-auk-bw-port006",
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/launcher.py", line 954, in launch_server
+    asyncio.run(run_server_with_sigterm_cleanup())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/launcher.py", line 945, in run_server_with_sigterm_cleanup
+    await server_run
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/launcher.py", line 656, in run_server
+    await mp_runner.start(timeout=startup_timeout)
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/pipeline/mp_runner.py", line 731, in start
+    prep = prepare_pipeline_runtime(
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/pipeline/runtime_config.py", line 135, in prepare_pipeline_runtime
+    runtime_dir = create_ipc_runtime_dir(config, stages=stages_cfg)
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/pipeline/runtime_config.py", line 113, in create_ipc_runtime_dir
+    namespace_prefix = truncate_ipc_namespace_prefix(
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/pipeline/runtime_config.py", line 241, in truncate_ipc_namespace_prefix
+    raise_ipc_path_budget_error(
+  File "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/pipeline/runtime_config.py", line 310, in raise_ipc_path_budget_error
+    raise ValueError(
+ValueError: IPC endpoint path would exceed the Unix-domain socket path limit (107 chars): base path '/root/private_data/guoxin-auk-port006-003/runtime/pipeline-95a9c6002ec36822475d889bfd3738a3/ipc' plus longest endpoint suffix length 30 yields 134 chars. Shorten endpoints.base_path or stage names.

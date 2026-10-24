@@ -1,0 +1,190 @@
+{
+  "schema": "auk-checkpoints-receipt006-v1",
+  "run_id": "7744314687224898b8f1ad59f3b6ee79",
+  "GPU_imported": false,
+  "started_utc": "2026-10-23T15:53:39.820521+00:00",
+  "status": "completed_all_files_verified",
+  "files": [
+    {
+      "path": "generation_config.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 74,
+      "sha256": "b9acf52072249e0e1850541d51ca4c85a30b9d7e23c2f2093ec0fb4139059ac7",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/generation_config.json"
+    },
+    {
+      "path": "added_tokens.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 579,
+      "sha256": "e81a2cc3bd867a1217019eed202d1d8a07e1063ece716f22060dda14f6cc07d8",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/added_tokens.json"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 667,
+      "sha256": "b47055ce61463ce143e9aab741d55c0aa520801a0a5d63be73c5b17cecb6bc69",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/preprocessor_config.json"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 832,
+      "sha256": "dc241604d085780a33f760f69c47e6622451104c20eee3cd3a12b6e884b43f44",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/special_tokens_map.json"
+    },
+    {
+      "path": "config.yaml",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 1310,
+      "sha256": "04d5cbae386342c5d031bcf53be594b167ec488ae82434e1d1d43fea7315a77b",
+      "namespace": "auk006",
+      "source": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/5ff61c12d026b5fcfc1e335581fed406e1fc2bb4/config.yaml"
+    },
+    {
+      "path": "chat_template.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 1313,
+      "sha256": "1933f7ca08e6503460e981d9037ddc0b851196abfa3aceea52d6ee0c0fdfd9f0",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/chat_template.json"
+    },
+    {
+      "path": "LICENSE",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 1653,
+      "sha256": "40eebc5270decd68865db9efad73c7fa86e1ab2ebe815195bf3c5903375ad2a1",
+      "namespace": "auk006",
+      "source": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/9d42bded40cd96a52ae4c0436d31dd86a317df86/LICENSE"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 6469,
+      "sha256": "569aa7a9171e36dfff80f0a7550ab0c9c09e46ac840fea5030641417394fb0d2",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/tokenizer_config.json"
+    },
+    {
+      "path": "LICENSE",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 7387,
+      "sha256": "ae8ef9d3fb476f735d9b9abeaab73b7f778b121c77427cd918ec3da01eefbc44",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/LICENSE"
+    },
+    {
+      "path": "config.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 13183,
+      "sha256": "20790f362c37a1718a3e764f597ae33dfc20177399762018dffaabf8321d4dd1",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/config.json"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 241817,
+      "sha256": "5b7629198e2ef80e37612a491d9bfd71639d2f212632d36d8ab086922e74e129",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/model.safetensors.index.json"
+    },
+    {
+      "path": "spk_dict.pt",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 259544,
+      "sha256": "6a05609b28f5d42b7b748f0f07592545c8f1f6885b9ae8fff64baf56e86b2a18",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/spk_dict.pt"
+    },
+    {
+      "path": "merges.txt",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/merges.txt"
+    },
+    {
+      "path": "vocab.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/vocab.json"
+    },
+    {
+      "path": "tokenizer.json",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 11421870,
+      "sha256": "8441917e39ae0244e06d704b95b3124795cec478e297f9afac39ba670d7e9d99",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/tokenizer.json"
+    },
+    {
+      "path": "vae.safetensors",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 637322604,
+      "sha256": "0f5857fd0d6b916d161c73fef433e0ccb42484a2dad3aa08e8a51975e29a0645",
+      "namespace": "auk006",
+      "source": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/d394f32f45114efde787900d4c7b85b82fd6f683/vae.safetensors"
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 1978024880,
+      "sha256": "8f2138170a87ec604b53232491a96d6dcf19e0724aca37e69aace143e508b170",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/model-00003-of-00003.safetensors"
+    },
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 4994850880,
+      "sha256": "349972cebff443030e9e96e1e930d7230979c6961cf046fa29fc580e4bcf49a6",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/model-00001-of-00003.safetensors"
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 4999787448,
+      "sha256": "b29a76dfefb3aa33a5bd0faa19c681d039a44de57223653ea0e933df728c6d8c",
+      "namespace": "qwen25-omni3b006",
+      "source": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/model-00002-of-00003.safetensors"
+    },
+    {
+      "path": "auk_base.safetensors",
+      "status": "downloaded_verified",
+      "resumed_from_bytes": 0,
+      "size": 6122209092,
+      "sha256": "29c65c0c6045e8d8fb454019f99c9680508f553fc98fa143feaca3711d0b8614",
+      "namespace": "auk006",
+      "source": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/f42b2080b21eb5440c64e5ab77c335760bd1197a/auk_base.safetensors"
+    }
+  ],
+  "finished_utc": "2026-10-23T16:04:37.843200+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "archive": {
+    "path": "000-session006-auk-results001.zip",
+    "bytes": 251876,
+    "sha256": "0b7172198eb446bf875457c3441f089e7715f800e19153aaaf21b002c09e98ba",
+    "files": 63
+  },
+  "CRC_passed": true,
+  "manifest_members_verified": 62,
+  "extracted_members_verified": 63,
+  "output": "E:\\hg20261019\\evidence\\session006\\auk-actual-originals007",
+  "archive_unmodified": true,
+  "scope": "Original ZIP and member integrity; no model execution or scoring"
+}

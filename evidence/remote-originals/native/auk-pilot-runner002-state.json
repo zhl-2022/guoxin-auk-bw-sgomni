@@ -1,0 +1,34 @@
+{
+  "started_utc": "2026-10-23T16:51:43.550828+00:00",
+  "steps": [
+    {
+      "argv": [
+        "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+        "-B",
+        "/root/private_data/guoxin-auk-port006-004/serve.py",
+        "--model-path",
+        "/root/private_data/guoxin-candidates/models/auk006",
+        "--encoder-path",
+        "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+        "--runtime-dir",
+        "/tmp/a006-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "--resolve"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "timeout",
+        "-s",
+        "TERM",
+        "-k",
+        "80s",
+        "2400s",
+        "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+        "-B",
+        "/root/private_data/guoxin-auk-port006-004/pilot.py"
+      ],
+      "returncode": 0
+    }
+  ]
+}

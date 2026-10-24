@@ -1,0 +1,246 @@
+{
+  "scope": "Downloaded pilot004 source/checkpoint identity, raw HTTP/WAV, metadata and recorded cleanup audit; no fresh remote-process/device probe and no official scoring",
+  "run_id": "a3e59176c8456dbbefd89b2189cb4165",
+  "pilot_directory": "E:\\hg20261019\\evidence\\session006\\auk-actual-originals007\\auk004\\a3e59176c8456dbbefd89b2189cb4165",
+  "passed": true,
+  "source_files_bound_to_frozen004": 321,
+  "checkpoint_files_verified_against_original_lock": 20,
+  "actual_stage_devices": {
+    "preprocessing": null,
+    "conditioning": "cuda",
+    "auk_engine": "cuda",
+    "decode": "cuda"
+  },
+  "server_log_owner_and_command_bound": true,
+  "runtime_observations": {
+    "checkpoint_load_1442_of_1442": true,
+    "DAS_HIP_SDPA_kernel_path_observed": true,
+    "recorded_stage_device": "cuda (native DAS Torch backend)",
+    "fresh_device_probe_in_this_local_audit": false,
+    "application_shutdown_complete": true,
+    "resource_tracker_leaked_semaphore_warning": true,
+    "mooncake_and_nixl_missing_warnings": true,
+    "conditioner_system_prompt_warning": true
+  },
+  "native_metadata": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+    },
+    "triton": {
+      "version": "3.6.0+gitc73250c4.staging",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+    },
+    "numpy": {
+      "version": "1.25.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+    },
+    "pydantic": {
+      "version": "2.12.5",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "a3ba23e895191fed69b8323cbcbcdc82984ca0b6a3cdc62c48a2341886a9c08d"
+    },
+    "tokenizers": {
+      "version": "0.22.2",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc"
+    },
+    "safetensors": {
+      "version": "0.7.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "6809326fbf17444dd520ab19f0a55b7a18476dbe52a430466bbf5389967c2aaa"
+    }
+  },
+  "wav": {
+    "container": "RIFF/WAVE",
+    "format_code": 1,
+    "bits_per_sample": 16,
+    "channels": 1,
+    "sample_rate": 24000,
+    "frames": 72000,
+    "duration_seconds": 3.0,
+    "finite_samples": true,
+    "peak_absolute": 0.207122802734375,
+    "rms": 0.04004450603667967,
+    "all_zero_samples": false,
+    "bytes": 144044,
+    "sha256": "f021918544801641c2d552626dae4e766a1aea25fc803b180e27aabfe5b2108e",
+    "scope": "audio_structure_only",
+    "semantic_quality_verified": false,
+    "GPU_verified": false,
+    "official_accuracy_pass": false
+  },
+  "configuration": {
+    "task": "/root/private_data/guoxin-auk-port006-004",
+    "framework": "sglang-omni-AuK-native-Torch-port006",
+    "precision": "bf16",
+    "model_id": "tencent/AuK",
+    "model_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+    "model_path": "/root/private_data/guoxin-candidates/models/auk006",
+    "encoder_path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+    "host": "127.0.0.1",
+    "port": 30139,
+    "url": "http://127.0.0.1:30139",
+    "load_timeout": 900,
+    "max_runtime": 1800,
+    "stop_grace": 45,
+    "tp": 1,
+    "command": [
+      "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+      "-B",
+      "/root/private_data/guoxin-auk-port006-004/serve.py",
+      "--model-path",
+      "/root/private_data/guoxin-candidates/models/auk006",
+      "--encoder-path",
+      "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+      "--runtime-dir",
+      "/tmp/a006-a3e59176c8456dbbefd89b2189cb4165",
+      "--port",
+      "30139"
+    ],
+    "official_accuracy_verified": false,
+    "official_performance_verified": false
+  },
+  "timings": {
+    "launch_step_wall_seconds": 130.63249379536137,
+    "speech_http_wall_seconds": 8.49845259822905,
+    "raw_speech_headers": {
+      "date": "Fri, 23 Oct 2026 16:54:18 GMT",
+      "server": "uvicorn",
+      "content-disposition": "attachment; filename=\"speech.wav\"",
+      "x-request-id": "speech-64c12b72-b9c0-4d50-ad7d-3030d8da14fb",
+      "x-finish-reason": "unknown",
+      "x-prompt-tokens": "50",
+      "x-completion-tokens": "150",
+      "x-sglang-omni-input-tokens": "50",
+      "x-sglang-omni-output-tokens": "150",
+      "x-sglang-omni-total-tokens": "200",
+      "x-engine-time": "8.479809",
+      "content-length": "144044",
+      "content-type": "audio/wav",
+      "connection": "close"
+    }
+  },
+  "cleanup": {
+    "state_belongs_to_run": true,
+    "process_tokens": {
+      "supervisor": null,
+      "server": null
+    },
+    "port_open": false,
+    "verified": true
+  },
+  "raw_files": {
+    "pilot-result.json": {
+      "bytes": 4983,
+      "sha256": "d458867246902b255b9caeb2b486ac9830c70e04e3e890321329c503310a4078"
+    },
+    "health.body": {
+      "bytes": 348,
+      "sha256": "3f4066ad8325e179fa418b9822f9c424bc8672d9fb61fe5a38f5fb9b984ba286"
+    },
+    "health.body.http.json": {
+      "bytes": 410,
+      "sha256": "0c54d4eb5624c97bce66dd421b5574157475fa76455935f1fca465fba8a32f30"
+    },
+    "models.body": {
+      "bytes": 286,
+      "sha256": "95739e238cd97ce0e0c82eaffd84a32b44cb06b0a160ee17d47ef681223f88ba"
+    },
+    "models.body.http.json": {
+      "bytes": 414,
+      "sha256": "e24da897539aced6c303bf10ea03a47473e965a8aba73d22cbad94936ff8b246"
+    },
+    "speech.wav": {
+      "bytes": 144044,
+      "sha256": "f021918544801641c2d552626dae4e766a1aea25fc803b180e27aabfe5b2108e"
+    },
+    "speech.wav.http.json": {
+      "bytes": 803,
+      "sha256": "7cd1b47d8175672887797e41ba7b36e2a38d15cdd938c3652b1c02f1d007d3c9"
+    },
+    "speech.request.json": {
+      "bytes": 183,
+      "sha256": "b2fe37d8b29619d25092b03877baede5eedf3a12922469e7402c89b57b870be1"
+    },
+    "sources-before.json": {
+      "bytes": 37588,
+      "sha256": "94b3bbb55ce8a6995988f30a48557acdd3c414be3efe2c48a468e67fe0912163"
+    },
+    "sources-after.json": {
+      "bytes": 37588,
+      "sha256": "94b3bbb55ce8a6995988f30a48557acdd3c414be3efe2c48a468e67fe0912163"
+    },
+    "native-before.json": {
+      "bytes": 2040,
+      "sha256": "7246c099548b3743e7f664f8b4d38eb27ad51376c84af65580e2aa8ce64f3c04"
+    },
+    "native-after.json": {
+      "bytes": 2040,
+      "sha256": "7246c099548b3743e7f664f8b4d38eb27ad51376c84af65580e2aa8ce64f3c04"
+    },
+    "checkpoint-a3e59176c8456dbbefd89b2189cb4165.json": {
+      "bytes": 6782,
+      "sha256": "1dcca4da1d27ad47a2b8946a428321c42bec6a233e4e59a1516ea3ac3b7d827b"
+    },
+    "resolved-config.json": {
+      "bytes": 9431,
+      "sha256": "88f5bfaf7002dcd2bfd0748e67b3f96b55cfa1a6f86c1ea3da92ea0603284a61"
+    },
+    "state.json": {
+      "bytes": 1078,
+      "sha256": "81e24871e5d1578929540ab6d9b13f32e33f39060781507ca2df932d87a95858"
+    },
+    "config-a3e59176c8456dbbefd89b2189cb4165.json": {
+      "bytes": 1079,
+      "sha256": "0b93274f2565f43d0325bbfe124e51ee184c11e605d1a1a54256babfc864d251"
+    },
+    "pilot-plan.json": {
+      "bytes": 1403,
+      "sha256": "b39373ebe56a8881792571b6c4129f03a2476a4426017a91a8098ba3b95ebe68"
+    },
+    "server.log": {
+      "bytes": 4004,
+      "sha256": "21f7a09e33655639af8f758d5fd1cd9482782b3f02266df246e89f8b9dbefb5f"
+    },
+    "supervisor.log": {
+      "bytes": 1894,
+      "sha256": "aa4c886a0d2c16bd7ed48108c34d7b8936d89af780d6efe11092354ede5c9d95"
+    },
+    "start.log": {
+      "bytes": 1035,
+      "sha256": "e31ad45345e0740855a4916c79f0ff2201312255abfe3fdb03734d91e3d384ce"
+    },
+    "stop.log": {
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    }
+  },
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_acceptance": false,
+  "submitted": false
+}

@@ -1,0 +1,90 @@
+{
+  "checked_utc": "2026-10-23T16:24:52.458189+00:00",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "scope": "CPU compatibility only, no weights, no GPU and no formal evaluation",
+  "checks": [
+    {
+      "name": "python310_syntax",
+      "passed": true,
+      "detail": {
+        "files": 309,
+        "python_grammar": "3.10"
+      }
+    },
+    {
+      "name": "real_upstream_four_stage_import",
+      "passed": true,
+      "detail": {
+        "file": "/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/models/auk/stages.py",
+        "factories": [
+          "create_preprocessing_executor",
+          "create_conditioning_executor",
+          "create_auk_engine_executor",
+          "create_decode_executor"
+        ]
+      }
+    },
+    {
+      "name": "qwen25_omni_classes_import",
+      "passed": true,
+      "detail": [
+        "Qwen2_5OmniProcessor",
+        "Qwen2_5OmniThinkerForConditionalGeneration"
+      ]
+    },
+    {
+      "name": "real_upstream_http_launcher_import",
+      "passed": false,
+      "error": "ModuleNotFoundError(\"No module named 'av'\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/private_data/guoxin-auk-port006-003/probe.py\", line 30, in check\n    data = fn()\n  File \"/root/private_data/guoxin-auk-port006-003/probe.py\", line 49, in launcher\n    from sglang_omni.serve.launcher import launch_server\n  File \"/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/launcher.py\", line 58, in <module>\n    from sglang_omni.serve.openai_api import ServerStatus, create_app\n  File \"/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/openai_api.py\", line 89, in <module>\n    from sglang_omni.serve.diarizations import register_diarizations\n  File \"/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/diarizations.py\", line 14, in <module>\n    from sglang_omni.serve.speech_to_text import (\n  File \"/root/private_data/guoxin-auk-port006-003/vendor/sglang_omni/serve/speech_to_text.py\", line 15, in <module>\n    import av\nModuleNotFoundError: No module named 'av'\n"
+    },
+    {
+      "name": "real_AuK_DiT_Flow_CPU_forward",
+      "passed": true,
+      "detail": {
+        "device": "cpu",
+        "shape": [
+          4,
+          4
+        ],
+        "finite": true,
+        "seeded_repeat_identical": true,
+        "reference_path_finite": true,
+        "checkpoint_loaded": false,
+        "small_random_network_only": true
+      }
+    },
+    {
+      "name": "upstream_cpu_state_codec",
+      "passed": true,
+      "detail": {
+        "tensor_codec": "upstream tensor_cpu",
+        "device": "cpu",
+        "relay_used": false
+      }
+    }
+  ],
+  "distributions": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "torchaudio": null,
+    "transformers": "5.5.0",
+    "numpy": "1.25.0",
+    "pydantic": "2.12.5",
+    "msgpack": "1.1.2",
+    "msgspec": "0.20.0",
+    "pyzmq": "27.1.0",
+    "pybase64": "1.4.3",
+    "omegaconf": "2.3.0",
+    "x-transformers": "1.31.14",
+    "einops": "0.8.2",
+    "soundfile": "0.13.1",
+    "scipy": "1.15.3",
+    "safetensors": "0.7.0",
+    "fastapi": "0.129.0",
+    "uvicorn": "0.41.0"
+  },
+  "passed": false,
+  "sglang_modules_actually_imported": [],
+  "GPU_execution": false,
+  "weights_loaded": false
+}

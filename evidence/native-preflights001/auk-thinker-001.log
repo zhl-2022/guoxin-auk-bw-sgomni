@@ -1,0 +1,33 @@
+Writing model shards:   0%|                                                                                            | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|███████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 288.63it/s]
+Loading weights:   0%|                                                                                                | 0/61 [00:00<?, ?it/s]Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████| 61/61 [00:00<00:00, 1461.72it/s]
+WARNING:root:System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+{
+  "checked_utc": "2026-10-23T16:25:15.815219+00:00",
+  "torch": "2.10.0",
+  "transformers": "5.5.0",
+  "tiny_parameters": 136160,
+  "hidden_shape": [
+    1,
+    2,
+    3,
+    32
+  ],
+  "finite": true,
+  "checkpoint_weights_loaded": false,
+  "tiny_random_local_save_reload": true,
+  "GPU_execution": false,
+  "passed": true,
+  "real_processor_local_files_only": {
+    "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+    "input_shape": [
+      1,
+      28
+    ],
+    "all_input_keys": [
+      "input_ids",
+      "attention_mask"
+    ],
+    "processor_weights_loaded": false
+  }
+}
+

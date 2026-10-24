@@ -1,0 +1,31 @@
+{
+  "run_id": "a3e59176c8456dbbefd89b2189cb4165",
+  "status": "stopped",
+  "created_utc": "2026-10-23T16:52:58.154252+00:00",
+  "supervisor_pid": 2472,
+  "supervisor_token": "280176134",
+  "config_path": "/root/private_data/guoxin-auk-port006-004/runtime/config-a3e59176c8456dbbefd89b2189cb4165.json",
+  "url": "http://127.0.0.1:30139",
+  "max_runtime_seconds": 1800,
+  "framework": "sglang-omni-AuK-native-Torch-port006",
+  "precision": "bf16",
+  "command": [
+    "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+    "-B",
+    "/root/private_data/guoxin-auk-port006-004/serve.py",
+    "--model-path",
+    "/root/private_data/guoxin-candidates/models/auk006",
+    "--encoder-path",
+    "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+    "--runtime-dir",
+    "/tmp/a006-a3e59176c8456dbbefd89b2189cb4165",
+    "--port",
+    "30139"
+  ],
+  "server_pid": 2473,
+  "server_token": "280176206",
+  "ready_utc": "2026-10-23T16:54:16.778477+00:00",
+  "reason": "stop requested",
+  "ended_utc": "2026-10-23T16:54:33.681147+00:00",
+  "elapsed_seconds": 95.527
+}

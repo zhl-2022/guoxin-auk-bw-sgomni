@@ -1,0 +1,41 @@
+{
+  "output": "/root/private_data/guoxin-session006-evidence/mobile-header-inspection001.json",
+  "files": [
+    {
+      "path": "weight/rl/llm/model-00004-of-00004.safetensors",
+      "status": "header_parsed",
+      "tensor_count": 5,
+      "error": null
+    },
+    {
+      "path": "weight/rl/llm/model-00001-of-00004.safetensors",
+      "status": "header_parsed",
+      "tensor_count": 82,
+      "error": null
+    },
+    {
+      "path": "weight/rl/llm/model-00003-of-00004.safetensors",
+      "status": "header_parsed",
+      "tensor_count": 100,
+      "error": null
+    },
+    {
+      "path": "weight/rl/llm/model-00002-of-00004.safetensors",
+      "status": "header_parsed",
+      "tensor_count": 104,
+      "error": null
+    },
+    {
+      "path": "weight/rl/vision_tower/model.safetensors",
+      "status": "header_parsed",
+      "tensor_count": 448,
+      "error": null
+    },
+    {
+      "path": "weight/rl/mm_projector/model.safetensors",
+      "status": "header_parsed",
+      "tensor_count": 6,
+      "error": null
+    }
+  ]
+}

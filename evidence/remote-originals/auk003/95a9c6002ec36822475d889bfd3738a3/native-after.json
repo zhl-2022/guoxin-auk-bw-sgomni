@@ -1,0 +1,52 @@
+{
+  "torch": {
+    "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+  },
+  "torchvision": {
+    "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+  },
+  "vllm": {
+    "version": "0.18.1+das.fa71803.dtk2604",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+  },
+  "vllm-hcu": {
+    "version": "0.18.1+das.dtk2604",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+  },
+  "transformers": {
+    "version": "5.5.0",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+  },
+  "triton": {
+    "version": "3.6.0+gitc73250c4.staging",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+  },
+  "numpy": {
+    "version": "1.25.0",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+  },
+  "pydantic": {
+    "version": "2.12.5",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "a3ba23e895191fed69b8323cbcbcdc82984ca0b6a3cdc62c48a2341886a9c08d"
+  },
+  "tokenizers": {
+    "version": "0.22.2",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc"
+  },
+  "safetensors": {
+    "version": "0.7.0",
+    "root": "/usr/local/lib/python3.10/dist-packages",
+    "metadata_sha256": "6809326fbf17444dd520ab19f0a55b7a18476dbe52a430466bbf5389967c2aaa"
+  }
+}

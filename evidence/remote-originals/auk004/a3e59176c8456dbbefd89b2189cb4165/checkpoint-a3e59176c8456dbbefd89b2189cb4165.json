@@ -1,0 +1,166 @@
+{
+  "files": [
+    {
+      "model": "tencent/AuK",
+      "revision": "790742b71a4430120daf2b2099192abae449eb9f",
+      "path": "/root/private_data/guoxin-candidates/models/auk006/LICENSE",
+      "bytes": 1653,
+      "identity_verified": true,
+      "actual_hash": "b31579283157c96863764d672053fd95017de0d9"
+    },
+    {
+      "model": "tencent/AuK",
+      "revision": "790742b71a4430120daf2b2099192abae449eb9f",
+      "path": "/root/private_data/guoxin-candidates/models/auk006/auk_base.safetensors",
+      "bytes": 6122209092,
+      "identity_verified": true,
+      "actual_hash": "29c65c0c6045e8d8fb454019f99c9680508f553fc98fa143feaca3711d0b8614"
+    },
+    {
+      "model": "tencent/AuK",
+      "revision": "790742b71a4430120daf2b2099192abae449eb9f",
+      "path": "/root/private_data/guoxin-candidates/models/auk006/config.yaml",
+      "bytes": 1310,
+      "identity_verified": true,
+      "actual_hash": "1e37113f88f175bcfe151c8481327c2d69025f1d"
+    },
+    {
+      "model": "tencent/AuK",
+      "revision": "790742b71a4430120daf2b2099192abae449eb9f",
+      "path": "/root/private_data/guoxin-candidates/models/auk006/vae.safetensors",
+      "bytes": 637322604,
+      "identity_verified": true,
+      "actual_hash": "0f5857fd0d6b916d161c73fef433e0ccb42484a2dad3aa08e8a51975e29a0645"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/LICENSE",
+      "bytes": 7387,
+      "identity_verified": true,
+      "actual_hash": "e01d337d67d910e44ed3d191914ab4a3682e6d7e"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/added_tokens.json",
+      "bytes": 579,
+      "identity_verified": true,
+      "actual_hash": "4562256351969d3b68f81fd5623ae42a9c7fbb25"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/chat_template.json",
+      "bytes": 1313,
+      "identity_verified": true,
+      "actual_hash": "e696060ab7ab6e20f60e4e09b18e5da4c1830000"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/config.json",
+      "bytes": 13183,
+      "identity_verified": true,
+      "actual_hash": "b384ba8df87edb013db2077327643bc3c885e49c"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/generation_config.json",
+      "bytes": 74,
+      "identity_verified": true,
+      "actual_hash": "1c1ac9d737684b833c80a438e30fc3ba53e89bd4"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/merges.txt",
+      "bytes": 1671853,
+      "identity_verified": true,
+      "actual_hash": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/model-00001-of-00003.safetensors",
+      "bytes": 4994850880,
+      "identity_verified": true,
+      "actual_hash": "349972cebff443030e9e96e1e930d7230979c6961cf046fa29fc580e4bcf49a6"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/model-00002-of-00003.safetensors",
+      "bytes": 4999787448,
+      "identity_verified": true,
+      "actual_hash": "b29a76dfefb3aa33a5bd0faa19c681d039a44de57223653ea0e933df728c6d8c"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/model-00003-of-00003.safetensors",
+      "bytes": 1978024880,
+      "identity_verified": true,
+      "actual_hash": "8f2138170a87ec604b53232491a96d6dcf19e0724aca37e69aace143e508b170"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/model.safetensors.index.json",
+      "bytes": 241817,
+      "identity_verified": true,
+      "actual_hash": "0f020dad805c3e7ed7f3b5b5f151e51ca58bad6c"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/preprocessor_config.json",
+      "bytes": 667,
+      "identity_verified": true,
+      "actual_hash": "63c79f1c43bce173ab13d94096dea54b3688436f"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/special_tokens_map.json",
+      "bytes": 832,
+      "identity_verified": true,
+      "actual_hash": "8c2a71eaac0f526df324364d953503def113b7a1"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/spk_dict.pt",
+      "bytes": 259544,
+      "identity_verified": true,
+      "actual_hash": "6a05609b28f5d42b7b748f0f07592545c8f1f6885b9ae8fff64baf56e86b2a18"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/tokenizer.json",
+      "bytes": 11421870,
+      "identity_verified": true,
+      "actual_hash": "8441917e39ae0244e06d704b95b3124795cec478e297f9afac39ba670d7e9d99"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/tokenizer_config.json",
+      "bytes": 6469,
+      "identity_verified": true,
+      "actual_hash": "22c6d3668a32e4fe6dc09331bff96e7cc3a2290f"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006/vocab.json",
+      "bytes": 2776833,
+      "identity_verified": true,
+      "actual_hash": "4783fe10ac3adce15ac8f358ef5462739852c569"
+    }
+  ],
+  "complete": true,
+  "weights_loaded": false
+}

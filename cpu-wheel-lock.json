@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "name": "soundfile",
+      "version": "0.13.1",
+      "filename": "soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/57/5e/70bdd9579b35003a489fc850b5047beeda26328053ebadc1fb60f320f7db/soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl",
+      "sha256": "03267c4e493315294834a0870f31dbb3b28a95561b80b134f0bd3cf2d5f0e618",
+      "size": 1313646,
+      "requires_dist": [
+        "cffi>=1.0",
+        "numpy"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/soundfile/0.13.1/json"
+    },
+    {
+      "name": "omegaconf",
+      "version": "2.3.0",
+      "filename": "omegaconf-2.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e3/94/1843518e420fa3ed6919835845df698c7e27e183cb997394e4a670973a65/omegaconf-2.3.0-py3-none-any.whl",
+      "sha256": "7b4df175cdb08ba400f45cae3bdcae7ba8365db4d165fc65fd04b050ab63b46b",
+      "size": 79500,
+      "source_metadata_url": "https://pypi.org/pypi/omegaconf/2.3.0/json",
+      "requires_dist": [
+        "antlr4-python3-runtime (==4.9.*)",
+        "PyYAML (>=5.1.0)",
+        "dataclasses ; python_version == \"3.6\""
+      ]
+    },
+    {
+      "name": "x-transformers",
+      "version": "1.31.14",
+      "filename": "x_transformers-1.31.14-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/54/9c/201b1503778851472759b05e9ec88cfc43d30c409b155eac148b6274460a/x_transformers-1.31.14-py3-none-any.whl",
+      "sha256": "991335a9ec5058e8eb0960b195da9057e6e043420e93d3938bce154fdcdd2194",
+      "size": 37505,
+      "source_metadata_url": "https://pypi.org/pypi/x-transformers/1.31.14/json",
+      "requires_dist": [
+        "torch>=2.0",
+        "einops>=0.8.0"
+      ]
+    },
+    {
+      "name": "antlr4-python3-runtime",
+      "version": "4.9.3",
+      "filename": "antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "size": 144577,
+      "sha256": "786387d1ec0fe14c93dc13bc3f76020520d432be0aa767519db7654819655197",
+      "origin": "local pure-Python build of exact PyPI source distribution",
+      "source_distribution": {
+        "name": "antlr4-python3-runtime",
+        "version": "4.9.3",
+        "filename": "antlr4-python3-runtime-4.9.3.tar.gz",
+        "url": "https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz",
+        "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b",
+        "size": 117034,
+        "source_metadata_url": "https://pypi.org/pypi/antlr4-python3-runtime/4.9.3/json",
+        "requires_dist": null
+      },
+      "build_command": "python -m pip wheel --no-deps --no-build-isolation <source.tar.gz> --wheel-dir <pool>",
+      "build_tool_versions": {
+        "pip": "24.2",
+        "setuptools": "75.1.0",
+        "wheel": "0.44.0"
+      }
+    },
+    {
+      "name": "librosa",
+      "version": "0.11.0",
+      "filename": "librosa-0.11.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b5/ba/c63c5786dfee4c3417094c4b00966e61e4a63efecee22cb7b4c0387dda83/librosa-0.11.0-py3-none-any.whl",
+      "sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1",
+      "size": 260749,
+      "requires_dist": [
+        "audioread>=2.1.9",
+        "numba>=0.51.0",
+        "numpy>=1.22.3",
+        "scipy>=1.6.0",
+        "scikit-learn>=1.1.0",
+        "joblib>=1.0",
+        "decorator>=4.3.0",
+        "soundfile>=0.12.1",
+        "pooch>=1.1",
+        "soxr>=0.3.2",
+        "typing_extensions>=4.1.1",
+        "lazy_loader>=0.1",
+        "msgpack>=1.0",
+        "standard-aifc; python_version >= \"3.13\"",
+        "standard-sunau; python_version >= \"3.13\""
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/librosa/0.11.0/json"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1",
+      "filename": "scikit_learn-1.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/91/ab3c697188f224d658969f678be86b0968ccc52774c8ab4a86a07be13c25/scikit_learn-1.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "775da975a471c4f6f467725dff0ced5c7ac7bda5e9316b260225b48475279a1b",
+      "size": 13497182,
+      "requires_dist": [
+        "numpy>=1.19.5",
+        "scipy>=1.6.0",
+        "joblib>=1.2.0",
+        "threadpoolctl>=3.1.0"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/scikit-learn/1.6.1/json"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "filename": "threadpoolctl-3.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl",
+      "sha256": "43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb",
+      "size": 18638,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/threadpoolctl/3.6.0/json"
+    },
+    {
+      "name": "audioread",
+      "version": "3.0.1",
+      "filename": "audioread-3.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/57/8d/30aa32745af16af0a9a650115fbe81bde7c610ed5c21b381fca0196f3a7f/audioread-3.0.1-py3-none-any.whl",
+      "sha256": "4cdce70b8adc0da0a3c9e0d85fb10b3ace30fbdf8d1670fd443929b61d117c33",
+      "size": 23492,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/audioread/3.0.1/json"
+    },
+    {
+      "name": "pooch",
+      "version": "1.8.2",
+      "filename": "pooch-1.8.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a8/87/77cc11c7a9ea9fd05503def69e3d18605852cd0d4b0d3b8f15bbeb3ef1d1/pooch-1.8.2-py3-none-any.whl",
+      "sha256": "3529a57096f7198778a5ceefd5ac3ef0e4d06a6ddaf9fc2d609b806f25302c47",
+      "size": 64574,
+      "requires_dist": [
+        "platformdirs>=2.5.0",
+        "packaging>=20.0",
+        "requests>=2.19.0"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/pooch/1.8.2/json"
+    },
+    {
+      "name": "soxr",
+      "version": "0.5.0.post1",
+      "filename": "soxr-0.5.0.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ba/e6/059070b4cdb7fdd8ffbb67c5087c1da9716577127fb0540cd11dbf77923b/soxr-0.5.0.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fcc049b0a151a65aa75b92f0ac64bb2dba785d16b78c31c2b94e68c141751d6d",
+      "size": 252779,
+      "requires_dist": [
+        "numpy"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/soxr/0.5.0.post1/json"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.4",
+      "filename": "lazy_loader-0.4-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/83/60/d497a310bde3f01cb805196ac61b7ad6dc5dcf8dce66634dc34364b20b4f/lazy_loader-0.4-py3-none-any.whl",
+      "sha256": "342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc",
+      "size": 12097,
+      "requires_dist": [
+        "packaging",
+        "importlib-metadata; python_version < \"3.8\""
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/lazy-loader/0.4/json"
+    },
+    {
+      "name": "av",
+      "version": "14.2.0",
+      "filename": "av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/b9/dd/5eee0fa00134219051e9616786be19332823355f5ffbd2cbbf6d45e8be91/av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "512a8ceca26250f26fc28913d7a08f962f8e7704189c111e9688180f9b752458",
+      "size": 38805945,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/av/14.2.0/json"
+    }
+  ],
+  "GPU_libraries_included": false
+}

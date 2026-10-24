@@ -1,0 +1,50 @@
+{
+  "started_utc": "2026-10-23T16:38:47.378458+00:00",
+  "steps": [
+    {
+      "argv": [
+        "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "/root/private_data/guoxin-auk-wheels006-av001/wheels/av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+        "-c",
+        "import av,json;print(json.dumps(dict(version=av.__version__,path=av.__file__)))"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+        "-B",
+        "/root/private_data/guoxin-auk-port006-003/probe.py",
+        "--launcher",
+        "--output",
+        "/root/private_data/guoxin-session006-evidence/auk-native-import004.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "timeout",
+        "-s",
+        "TERM",
+        "-k",
+        "80s",
+        "2400s",
+        "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+        "-B",
+        "/root/private_data/guoxin-auk-port006-003/pilot.py"
+      ],
+      "returncode": 1
+    }
+  ]
+}

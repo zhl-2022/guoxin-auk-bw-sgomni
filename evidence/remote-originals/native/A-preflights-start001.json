@@ -1,0 +1,41 @@
+{
+  "auk-import": {
+    "pid": 462,
+    "argv": [
+      "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+      "-B",
+      "/root/private_data/guoxin-auk-port006-003/probe.py",
+      "--launcher",
+      "--functional",
+      "--output",
+      "/root/private_data/guoxin-session006-evidence/auk-native-import003.json"
+    ],
+    "max_seconds": 240
+  },
+  "auk-thinker": {
+    "pid": 464,
+    "argv": [
+      "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+      "-B",
+      "/root/private_data/guoxin-auk-port006-003/tiny_thinker_probe.py",
+      "--processor-path",
+      "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+      "--output",
+      "/root/private_data/guoxin-session006-evidence/auk-tiny-thinker-native003.json"
+    ],
+    "max_seconds": 240
+  },
+  "mobile-native": {
+    "pid": 466,
+    "argv": [
+      "/usr/bin/python",
+      "-B",
+      "/root/private_data/guoxin-mobilevla-tools-006-002/scripts/probe_mobilevla_native_006.py",
+      "--source",
+      "/root/private_data/guoxin-candidates/models/mobilevla-r1-rl006/weight/rl",
+      "--output",
+      "/root/private_data/guoxin-session006-evidence/mobile-native-probe002.json"
+    ],
+    "max_seconds": 240
+  }
+}

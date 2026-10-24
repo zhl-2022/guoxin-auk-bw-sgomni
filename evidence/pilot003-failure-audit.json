@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "scope": "Audited expected failure and cleanup; this does not mean the failed pilot passed",
+  "run_id": "95a9c6002ec36822475d889bfd3738a3",
+  "pilot_passed": false,
+  "source_files_bound_to_frozen003": 321,
+  "frozen003_sha256": "169cccceadf0d26840251bb7c093c1883842072402da49ee2939b44e63004f42",
+  "observed_failure": "IPC endpoint 134 chars exceeds Unix socket limit 107 chars; failure before model loading",
+  "checkpoint_identity_completed": true,
+  "native_metadata_before_after_equal": true,
+  "cleanup": {
+    "state_belongs_to_run": true,
+    "process_tokens": {
+      "supervisor": null,
+      "server": null
+    },
+    "port_open": false,
+    "verified": true
+  },
+  "raw_files": {
+    "checkpoint-95a9c6002ec36822475d889bfd3738a3.json": {
+      "bytes": 6782,
+      "sha256": "1dcca4da1d27ad47a2b8946a428321c42bec6a233e4e59a1516ea3ac3b7d827b"
+    },
+    "config-95a9c6002ec36822475d889bfd3738a3.json": {
+      "bytes": 1128,
+      "sha256": "0dc4d8a08f4b29dbc952a66e4d909e047adf816f45746a4eba4cdb7f8278ae5e"
+    },
+    "native-after.json": {
+      "bytes": 2040,
+      "sha256": "7246c099548b3743e7f664f8b4d38eb27ad51376c84af65580e2aa8ce64f3c04"
+    },
+    "native-before.json": {
+      "bytes": 2040,
+      "sha256": "7246c099548b3743e7f664f8b4d38eb27ad51376c84af65580e2aa8ce64f3c04"
+    },
+    "pilot-plan.json": {
+      "bytes": 1452,
+      "sha256": "f867c3e07ea06ebc8b63c931bff40875ff8bb837361008666f1d5e765758999a"
+    },
+    "pilot-result.json": {
+      "bytes": 2817,
+      "sha256": "1298cfc28756bc9bd45f584fc591bebf87789af193594a2751d89f9c916442a9"
+    },
+    "resolved-config.json": {
+      "bytes": 9480,
+      "sha256": "0d6878f00a0d25617524a1ce7bbf685262545e594380b5cb83778cd001b94fd2"
+    },
+    "server.log": {
+      "bytes": 2914,
+      "sha256": "8bdc60255095c61f623405ea962be22d63aa9a4cf666591ac65c57914bb6e10d"
+    },
+    "sources-after.json": {
+      "bytes": 37588,
+      "sha256": "f9eb69c635d8fd1bdd608b6cb3b2d98508e9ebb9a20701afbf2788792001929c"
+    },
+    "sources-before.json": {
+      "bytes": 37588,
+      "sha256": "f9eb69c635d8fd1bdd608b6cb3b2d98508e9ebb9a20701afbf2788792001929c"
+    },
+    "start.log": {
+      "bytes": 73,
+      "sha256": "ff00662a52d7e7818c219662e7b96a6d949df1cac921806801c55777176f5956"
+    },
+    "state.json": {
+      "bytes": 1086,
+      "sha256": "cd0afbc7cd06dc83609b3f9166981acc3d91e4c206147b4d251cbd5ea878ef38"
+    },
+    "stop.log": {
+      "bytes": 71,
+      "sha256": "9cab7f8f9c0c46d44e6e3d8eafea7f7e3595cc906ff7ed47f8fbb2137fedbcf3"
+    },
+    "supervisor.log": {
+      "bytes": 1888,
+      "sha256": "0a55da26cdd327a97ec55a019c3efda6aeab0bba34d12489b9109604af4fded6"
+    }
+  },
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submitted": false
+}

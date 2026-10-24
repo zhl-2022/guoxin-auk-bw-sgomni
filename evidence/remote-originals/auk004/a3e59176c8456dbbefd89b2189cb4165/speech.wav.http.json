@@ -1,0 +1,24 @@
+{
+  "url": "http://127.0.0.1:30139/v1/audio/speech",
+  "method": "POST",
+  "status": 200,
+  "headers": {
+    "date": "Fri, 23 Oct 2026 16:54:18 GMT",
+    "server": "uvicorn",
+    "content-disposition": "attachment; filename=\"speech.wav\"",
+    "x-request-id": "speech-64c12b72-b9c0-4d50-ad7d-3030d8da14fb",
+    "x-finish-reason": "unknown",
+    "x-prompt-tokens": "50",
+    "x-completion-tokens": "150",
+    "x-sglang-omni-input-tokens": "50",
+    "x-sglang-omni-output-tokens": "150",
+    "x-sglang-omni-total-tokens": "200",
+    "x-engine-time": "8.479809",
+    "content-length": "144044",
+    "content-type": "audio/wav",
+    "connection": "close"
+  },
+  "body_bytes": 144044,
+  "body_sha256": "f021918544801641c2d552626dae4e766a1aea25fc803b180e27aabfe5b2108e",
+  "wall_seconds": 8.49845259822905
+}

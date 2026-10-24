@@ -1,0 +1,53 @@
+{
+  "schema": "mobilevla-derived-hf-view-006-v2",
+  "created_utc": "2026-10-23T16:41:29.305782+00:00",
+  "source": "/root/private_data/guoxin-candidates/models/mobilevla-r1-rl006/weight/rl",
+  "derived": "/root/private_data/guoxin-candidates/models/mobilevla-r1-derived006",
+  "source_unchanged": true,
+  "derived_small_files": {
+    "config.json": {
+      "bytes": 2473,
+      "sha256": "acaab5fc61e9f855775d0a3e5d1115a4b2ef1491055dafcfae10b770c3e6a4c5"
+    },
+    "generation_config.json": {
+      "bytes": 194,
+      "sha256": "37e2904bb4bc0d9a49c8d0fade95c0a7c887a6658880563afe1140274c2fe6eb"
+    },
+    "mobilevla-chat-template.jinja": {
+      "bytes": 793,
+      "sha256": "4387bf5957708f96398c9de093879c4c7f20cb3ad40996eb8aaed6ed97b75d9b"
+    },
+    "model.safetensors.index.json": {
+      "bytes": 23950,
+      "sha256": "ce350cea18b4668fef697710325e81cf7974430444764275558a06dd9460a734"
+    },
+    "preprocessor_config.json": {
+      "bytes": 368,
+      "sha256": "f59da2f87c3cd079bd4f8f3037e81b277c60c498e279a8020331f67a5a3157e8"
+    },
+    "special_tokens_map.json": {
+      "bytes": 434,
+      "sha256": "214dd83efd2bfad51e3e87df20334fdcdcc6192d0118779efb86ef5a83cac5e4"
+    },
+    "tokenizer.json": {
+      "bytes": 6623067,
+      "sha256": "84dec969d42ed0f08948e7601200f65e43c8e756b781a4a3e1dfdfd57062f8b5"
+    },
+    "tokenizer_config.json": {
+      "bytes": 51713,
+      "sha256": "8cd28e78ba450f60688d60eb1de465016871ba1289678d9c1f2c6860ccb5f3bb"
+    }
+  },
+  "source_weights_were_not_rewritten": true,
+  "extraction_receipt_sha256": "df5333808e098d78ed0afb9bac168d33c7752c7e55f1e7e259d461d9ade1c4fe",
+  "full_lfs_parts_sha_verified": false,
+  "partial_archive_integrity_scope": "Fixed-revision HTTPS exact Range, ZIP local-header + central-directory size/name/method/CRC32; locally calculated compressed and extracted SHA256 recorded. Partial ranges cannot verify publisher full-part LFS SHA256.",
+  "sentinel_adaptation": {
+    "source": -200,
+    "runtime": 128259,
+    "no_embedding_rows_added": true
+  },
+  "gpu_loaded": false,
+  "formal_ready": false,
+  "submitted": false
+}

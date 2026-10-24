@@ -1,0 +1,238 @@
+{
+  "schema": "auk-port006-model-lock-v1",
+  "models": [
+    {
+      "id": "tencent/AuK",
+      "revision": "790742b71a4430120daf2b2099192abae449eb9f",
+      "license": "mit",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "bytes": 1630,
+          "git_blob_sha1": "80e2a77eb7788ce20789b004eb100e1f1caca514",
+          "required_for_conservative_snapshot": false,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/.gitattributes",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1653,
+          "git_blob_sha1": "b31579283157c96863764d672053fd95017de0d9",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/LICENSE",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "README.md",
+          "bytes": 10096,
+          "git_blob_sha1": "7d8bc248df44282f03d38eb2a425d48145e9cc6e",
+          "required_for_conservative_snapshot": false,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/README.md",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "assets/arch.png",
+          "bytes": 861271,
+          "required_for_conservative_snapshot": false,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/assets/arch.png",
+          "sha256": "1512b37ee0a642be4ec67a79b37152b87900f63dc9176585a891d42ebaef891a",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "assets/performance.png",
+          "bytes": 2249748,
+          "required_for_conservative_snapshot": false,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/assets/performance.png",
+          "sha256": "d194d8dd5157b6564be2e88a9b289b749485eeb160224b7ca5fa4c5468a88541",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "auk_base.safetensors",
+          "bytes": 6122209092,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/auk_base.safetensors",
+          "sha256": "29c65c0c6045e8d8fb454019f99c9680508f553fc98fa143feaca3711d0b8614",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "AuK_DiT_with_layer_fusion"
+        },
+        {
+          "path": "config.yaml",
+          "bytes": 1310,
+          "git_blob_sha1": "1e37113f88f175bcfe151c8481327c2d69025f1d",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/config.yaml",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "vae.safetensors",
+          "bytes": 637322604,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/tencent/AuK/resolve/790742b71a4430120daf2b2099192abae449eb9f/vae.safetensors",
+          "sha256": "0f5857fd0d6b916d161c73fef433e0ccb42484a2dad3aa08e8a51975e29a0645",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "AuK_VAE"
+        }
+      ],
+      "weights_downloaded_in_this_preflight": false
+    },
+    {
+      "id": "Qwen/Qwen2.5-Omni-3B",
+      "revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+      "license": "qwen-research",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "bytes": 1519,
+          "git_blob_sha1": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "required_for_conservative_snapshot": false,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/.gitattributes",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 7387,
+          "git_blob_sha1": "e01d337d67d910e44ed3d191914ab4a3682e6d7e",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/LICENSE",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "README.md",
+          "bytes": 36788,
+          "git_blob_sha1": "5e0410d004426a8bfb6a8ce339798e004932966c",
+          "required_for_conservative_snapshot": false,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/README.md",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "added_tokens.json",
+          "bytes": 579,
+          "git_blob_sha1": "4562256351969d3b68f81fd5623ae42a9c7fbb25",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/added_tokens.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "chat_template.json",
+          "bytes": 1313,
+          "git_blob_sha1": "e696060ab7ab6e20f60e4e09b18e5da4c1830000",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/chat_template.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "config.json",
+          "bytes": 13183,
+          "git_blob_sha1": "b384ba8df87edb013db2077327643bc3c885e49c",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/config.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 74,
+          "git_blob_sha1": "1c1ac9d737684b833c80a438e30fc3ba53e89bd4",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/generation_config.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671853,
+          "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/merges.txt",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "model-00001-of-00003.safetensors",
+          "bytes": 4994850880,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/model-00001-of-00003.safetensors",
+          "sha256": "349972cebff443030e9e96e1e930d7230979c6961cf046fa29fc580e4bcf49a6",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "Qwen_full_snapshot_shard_Thinker_uses_subset"
+        },
+        {
+          "path": "model-00002-of-00003.safetensors",
+          "bytes": 4999787448,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/model-00002-of-00003.safetensors",
+          "sha256": "b29a76dfefb3aa33a5bd0faa19c681d039a44de57223653ea0e933df728c6d8c",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "Qwen_full_snapshot_shard_Thinker_uses_subset"
+        },
+        {
+          "path": "model-00003-of-00003.safetensors",
+          "bytes": 1978024880,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/model-00003-of-00003.safetensors",
+          "sha256": "8f2138170a87ec604b53232491a96d6dcf19e0724aca37e69aace143e508b170",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "Qwen_full_snapshot_shard_Thinker_uses_subset"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "bytes": 241817,
+          "git_blob_sha1": "0f020dad805c3e7ed7f3b5b5f151e51ca58bad6c",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/model.safetensors.index.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 667,
+          "git_blob_sha1": "63c79f1c43bce173ab13d94096dea54b3688436f",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/preprocessor_config.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 832,
+          "git_blob_sha1": "8c2a71eaac0f526df324364d953503def113b7a1",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/special_tokens_map.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "spk_dict.pt",
+          "bytes": 259544,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/spk_dict.pt",
+          "sha256": "6a05609b28f5d42b7b748f0f07592545c8f1f6885b9ae8fff64baf56e86b2a18",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "conservative_snapshot_auxiliary_Thinker_unused_do_not_unpickle"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 11421870,
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/tokenizer.json",
+          "sha256": "8441917e39ae0244e06d704b95b3124795cec478e297f9afac39ba670d7e9d99",
+          "git_blob_sha1_is_lfs_pointer": true,
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 6469,
+          "git_blob_sha1": "22c6d3668a32e4fe6dc09331bff96e7cc3a2290f",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/tokenizer_config.json",
+          "role": "configuration_tokenizer_or_notice"
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833,
+          "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+          "required_for_conservative_snapshot": true,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B/resolve/f75b40e3da2003cdd6e1829b1f420ca70797c34e/vocab.json",
+          "role": "configuration_tokenizer_or_notice"
+        }
+      ],
+      "weights_downloaded_in_this_preflight": false
+    }
+  ]
+}

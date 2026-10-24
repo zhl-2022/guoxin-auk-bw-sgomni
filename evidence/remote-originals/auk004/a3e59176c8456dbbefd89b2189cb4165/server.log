@@ -1,0 +1,31 @@
+
+=== run a3e59176c8456dbbefd89b2189cb4165 at 2026-10-23T16:52:58.367780+00:00 ===
+["/root/private_data/guoxin-auk-port006/venv002/bin/python", "-B", "/root/private_data/guoxin-auk-port006-004/serve.py", "--model-path", "/root/private_data/guoxin-candidates/models/auk006", "--encoder-path", "/root/private_data/guoxin-candidates/models/qwen25-omni3b006", "--runtime-dir", "/tmp/a006-a3e59176c8456dbbefd89b2189cb4165", "--port", "30139"]
+Failed to import mooncake: No module named 'mooncake'. MooncakeRelay will not work. Install with: pip install mooncake-transfer-engine
+Failed to import nixl: No module named 'nixl'. NixlRelay will not work.
+Failed to import mooncake: No module named 'mooncake'. MooncakeRelay will not work. Install with: pip install mooncake-transfer-engine
+Failed to import nixl: No module named 'nixl'. NixlRelay will not work.
+/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages/x_transformers/x_transformers.py:507: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages/x_transformers/x_transformers.py:531: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+Loading weights:   0%|                                                                                              | 0/1442 [00:00<?, ?it/s]Loading weights:  42%|██████████████████████████████████▍                                               | 606/1442 [00:00<00:00, 6059.12it/s]Loading weights:  84%|████████████████████████████████████████████████████████████████████             | 1212/1442 [00:00<00:00, 5755.57it/s]Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████| 1442/1442 [00:00<00:00, 5797.53it/s]
+/usr/local/lib/python3.10/dist-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+INFO:     Started server process [2473]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:30139 (Press CTRL+C to quit)
+INFO:     127.0.0.1:41922 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41924 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41926 - "GET /v1/models HTTP/1.1" 200 OK
+2026-10-24 00:54:19,169 [WARNING] root: System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+/usr/local/lib/python3.10/dist-packages/transformers/integrations/sdpa_attention.py:92: UserWarning: sdpa adopt the new interface of flash-attn (Triggered internally at /home/pytorch/aten/src/ATen/native/transformers/hip/cutlassfa_adapter.h:145.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+INFO:     127.0.0.1:41928 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2473]
+/usr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

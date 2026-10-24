@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-23T16:40:09.836719+00:00",
+  "returncode": 0,
+  "argv": [
+    "/usr/bin/python",
+    "-B",
+    "-m",
+    "mobilevla_bw006.prepare",
+    "--source",
+    "/root/private_data/guoxin-candidates/models/mobilevla-r1-rl006/weight/rl",
+    "--receipt",
+    "/root/private_data/guoxin-candidates/models/mobilevla-r1-rl006/extraction-receipt.json",
+    "--output",
+    "/root/private_data/guoxin-candidates/models/mobilevla-r1-derived006"
+  ]
+}

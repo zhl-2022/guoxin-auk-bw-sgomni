@@ -1,0 +1,16 @@
+{
+  "track": "T04",
+  "model_id": "tencent/AuK",
+  "competition_model_label": "Tencent-Hunyuan/AuK",
+  "card": "BW",
+  "framework": "SGLang-Omni AuK native Torch compatibility fork",
+  "framework_revision": "f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88",
+  "candidate004_zip_sha256": "f087c025de08e7f764118d44f187ff7de78e9ca265539a89d353b18b95c0bdfb",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submitted": false,
+  "local_actual_pilot_audit_passed": true,
+  "actual_run_id": "a3e59176c8456dbbefd89b2189cb4165",
+  "official_acceptance": false,
+  "submission_ready": false
+}
