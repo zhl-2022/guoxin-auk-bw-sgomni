@@ -1,0 +1,15 @@
+{
+  "ready": true,
+  "candidate": "/root/private_data/guoxin-session010/auk-candidate",
+  "dataset": "/root/private_data/guoxin-session010/seedtts",
+  "whisper": "/root/private_data/guoxin-session010/whisper-large-v3",
+  "data_count": 1088,
+  "changes": [
+    "30-second cap, reference-duration estimate unmodified",
+    "max batch/concurrency4",
+    "FP32 stored DiT weights with BF16 autocast, matching upstream recipe",
+    "owned runtime cap10800"
+  ],
+  "serve_before_sha256": "aca2107af96a8bc8dd8f3e20139bc694544d74d2ed77d1831840abdcbe3bdd9d",
+  "serve_after_sha256": "7e09459472bd7f3f88adf3268b9f885ea23ec21a6f93926bf6a86ce7cfab5f85"
+}

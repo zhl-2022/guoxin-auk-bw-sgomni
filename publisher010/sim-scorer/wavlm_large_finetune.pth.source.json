@@ -1,0 +1,17 @@
+{
+  "repository": "popsoda2002/seedtts-wavlm-sim",
+  "revision": "508f5410742122c7fb0d94e288152debd92cf629",
+  "file": {
+    "type": "file",
+    "oid": "2e929d8cb4db59a78edd6f5e7c177387f72bc47c",
+    "size": 1301926579,
+    "lfs": {
+      "oid": "51f07e3b94d9e0262a6a675ef5a087be3dd09e8c62e9d886827f44f82fe7f94b",
+      "size": 1301926579,
+      "pointerSize": 135
+    },
+    "xetHash": "43ce8d45a3cba162802371c21bffef4ba756b90c82b38dc11c8116d61fac8347",
+    "path": "wavlm_large_finetune.pth"
+  },
+  "recommendation": "sgl-project/sglang-omni@f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88/benchmarks/metrics/speaker_similarity_assets.py"
+}

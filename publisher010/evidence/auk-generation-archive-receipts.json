@@ -1,0 +1,16 @@
+[
+  {
+    "file": "session010-auk-generation003-B-results.zip",
+    "bytes": 369595963,
+    "sha256": "fe0af4df701b8266481c41f03f8818ea79bf70cc91b62e5285d01fc58ff41110",
+    "zip_crc_pass": true,
+    "wav_count": 2176
+  },
+  {
+    "file": "session010-auk-generation003-A-results.zip",
+    "bytes": 183800487,
+    "sha256": "e2a997656a210ba15e3072b7a90c3c5cfab99b7412e323b3f3d0e158f9443a6c",
+    "zip_crc_pass": true,
+    "wav_count": 1088
+  }
+]

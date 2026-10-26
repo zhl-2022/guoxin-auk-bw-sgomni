@@ -1,0 +1,270 @@
+--- upstream/sglang_omni/pipeline/stage_workers.py
++++ port006/sglang_omni/pipeline/stage_workers.py
+@@ -21,7 +21,7 @@
+ from multiprocessing.synchronize import Event
+ from typing import Literal, Sequence
+ 
+-from sglang.srt.utils import kill_itself_when_parent_died
++from sglang_omni.utils.port_process006 import kill_itself_when_parent_died
+ from torch._dynamo.callback import CallbackArgs, callback_handler
+ 
+ from sglang_omni.config.runtime import (
+--- upstream/sglang_omni/platforms/__init__.py
++++ port006/sglang_omni/platforms/__init__.py
+@@ -1,90 +1,22 @@
++# SPDX-License-Identifier: Apache-2.0
++"""AuK-only port006 platform bootstrap using the installed PyTorch runtime.
++
++This is a compatibility fork, not a claim that SRT's CUDA engines are available.
++The AuK four-stage SimpleScheduler pipeline does not use an SRT model engine.
++"""
+ import os
+ import pkgutil
++from sglang_omni.platforms.interface import OmniPlatform
++from sglang_omni.platforms.torch_port006 import TorchPort006Platform
+ 
+-from sglang.srt import platforms as srt_platforms
+-from sglang.srt.platforms.interface import SRTPlatform
++def load_platform_class(qualname):
++    cls = pkgutil.resolve_name(qualname)
++    if not isinstance(cls, type) or not issubclass(cls, OmniPlatform):
++        raise TypeError(f"Not an OmniPlatform: {qualname}")
++    return cls
+ 
+-from sglang_omni.platforms.apple import AppleOmniPlatform
+-from sglang_omni.platforms.cpu import CPUOmniPlatform
+-from sglang_omni.platforms.cuda import CUDAOmniPlatform
+-from sglang_omni.platforms.interface import OmniPlatform
+-from sglang_omni.platforms.musa import MUSAOmniPlatform
+-from sglang_omni.platforms.npu import NPUOmniPlatform
+-from sglang_omni.platforms.rocm import ROCMOmniPlatform
+-from sglang_omni.platforms.xpu import XPUOmniPlatform
+-
+-
+-def load_platform_class(qualname: str) -> type[OmniPlatform]:
+-    cls = pkgutil.resolve_name(qualname)
+-    if not isinstance(cls, type):
+-        raise TypeError(f"Expected a platform class, got {type(cls)}: {qualname}")
+-    else:
+-        pass
+-    if issubclass(cls, OmniPlatform):
+-        return cls
+-    else:
+-        pass
+-    if not issubclass(cls, SRTPlatform):
+-        raise TypeError(f"Expected an SRTPlatform subclass: {qualname}")
+-    else:
+-        pass
+-    return type(
+-        f"Omni{cls.__name__}",
+-        (cls, OmniPlatform),
+-        {"_omni_platform_qualname": qualname},
+-    )
+-
+-
+-def as_omni_platform(platform: SRTPlatform) -> OmniPlatform:
+-    if platform.is_cuda():
+-        return CUDAOmniPlatform()
+-    else:
+-        pass
+-    if platform.is_rocm():
+-        return ROCMOmniPlatform()
+-    else:
+-        pass
+-    if platform.is_cpu():
+-        return CPUOmniPlatform()
+-    else:
+-        pass
+-    if platform.is_xpu():
+-        return XPUOmniPlatform()
+-    else:
+-        pass
+-    if platform.is_npu():
+-        return NPUOmniPlatform()
+-    else:
+-        pass
+-    if platform.is_mps():
+-        return AppleOmniPlatform()
+-    else:
+-        pass
+-    if platform.is_musa():
+-        return MUSAOmniPlatform()
+-    else:
+-        pass
+-    qualname = f"{type(platform).__module__}.{type(platform).__qualname__}"
+-    return load_platform_class(qualname)()
+-
+-
+-def resolve_platform() -> OmniPlatform:
+-    return as_omni_platform(srt_platforms.current_platform)
+-
+-
+-def get_platform_spec(platform: OmniPlatform) -> str:
+-    if (
+-        platform._omni_platform_qualname is not None
+-    ):  # noqa: leading-underscore  # upstream spelling, or the public name is already taken
+-        return (
+-            platform._omni_platform_qualname
+-        )  # noqa: leading-underscore  # upstream spelling, or the public name is already taken
+-    else:
+-        pass
++def get_platform_spec(platform):
+     return f"{type(platform).__module__}.{type(platform).__qualname__}"
+ 
+-
+ platform_spec = os.environ.get("SGLANG_OMNI_PLATFORM_SPEC")
+-current_platform = (
+-    load_platform_class(platform_spec)() if platform_spec else resolve_platform()
+-)
++current_platform = load_platform_class(platform_spec)() if platform_spec else TorchPort006Platform()
+--- upstream/sglang_omni/platforms/interface.py
++++ port006/sglang_omni/platforms/interface.py
+@@ -7,8 +7,6 @@
+ from contextlib import AbstractContextManager, nullcontext
+ from typing import TYPE_CHECKING, Protocol
+ 
+-from sglang.srt.arg_groups.model_override_base import resolved_view
+-from sglang.srt.platforms.device_mixin import DeviceMixin
+ 
+ from sglang_omni.utils.gpu_memory import narrow_visible_devices
+ from sglang_omni.utils.misc import normalize_quantization
+@@ -106,7 +104,7 @@
+     return env_updates
+ 
+ 
+-class OmniPlatform(DeviceMixin):
++class OmniPlatform:
+     _omni_platform_qualname: str | None = None
+ 
+     @classmethod
+@@ -153,7 +151,9 @@
+     ) -> str | None:
+         """Apply Omni backend policy after checkpoint quantization is known."""
+ 
+-        cfg = resolved_view(server_args)
++        # SRT engine policy is outside this AuK-only fork.
++        raise NotImplementedError('AuK port006 does not provide SRT model engines')
++        cfg = server_args
+         effective_quantization = normalize_quantization(model_config.quantization)
+         server_quantization = normalize_quantization(cfg.quantization)
+         if server_quantization is not None:
+--- upstream/sglang_omni/platforms/torch_port006.py
++++ port006/sglang_omni/platforms/torch_port006.py
+@@ -0,0 +1,47 @@
++# SPDX-License-Identifier: Apache-2.0
++"""Native Torch device adapter restricted to AuK's single-device eager path."""
++import random
++import numpy as np
++import torch
++from sglang_omni.platforms.interface import OmniPlatform
++
++class TorchPort006Platform(OmniPlatform):
++    @property
++    def device_type(self):
++        return "cuda" if torch.cuda.is_available() else "cpu"
++    def is_cpu(self): return self.device_type == "cpu"
++    def is_cuda(self): return self.device_type == "cuda" and not self.is_rocm()
++    def is_rocm(self): return self.device_type == "cuda" and bool(torch.version.hip)
++    def is_cuda_alike(self): return self.device_type == "cuda"
++    def is_npu(self): return False
++    def is_xpu(self): return False
++    def is_mps(self): return False
++    def is_musa(self): return False
++    def get_device(self, device_id=0):
++        if self.is_cpu(): return torch.device("cpu")
++        return torch.device("cuda", device_id)
++    def set_device(self, device):
++        if not self.is_cpu(): torch.cuda.set_device(device)
++    def synchronize(self):
++        if not self.is_cpu(): torch.cuda.synchronize()
++    def empty_cache(self):
++        if not self.is_cpu(): torch.cuda.empty_cache()
++    def get_available_memory(self, device_id=0):
++        if self.is_cpu(): raise NotImplementedError("CPU free memory is not a GPU budget")
++        return torch.cuda.mem_get_info(device_id)
++    def seed_everything(self, seed):
++        random.seed(seed); np.random.seed(seed); torch.manual_seed(seed)
++        if not self.is_cpu(): torch.cuda.manual_seed_all(seed)
++    def get_intra_node_transport(self):
++        from sglang_omni.comm.data_ref import TransportKind
++        return TransportKind.SHM
++    def supports_torchaudio_resample(self):
++        from sglang_omni.utils.audio import torchaudio
++        return torchaudio is not None
++    def enable_code2wav_graph(self): return False
++    def enable_codec_decode_graph(self): return False
++    def enable_talker_graph(self): return False
++    def enable_tts_predictor_graph(self): return False
++    def enable_tts_vocoder_fast_path(self): return False
++    def enable_thinker_decode_graph(self): return False
++    def supports_fp8_moe(self): return False
+--- upstream/sglang_omni/serve/launcher.py
++++ port006/sglang_omni/serve/launcher.py
+@@ -42,7 +42,7 @@
+ import uvicorn
+ from fastapi import APIRouter, Depends, FastAPI, HTTPException
+ from pydantic import BaseModel
+-from sglang.srt.utils.network import NetworkAddress
++from sglang_omni.utils.port_process006 import NetworkAddress
+ 
+ from sglang_omni.client import Client
+ from sglang_omni.client.types import GenerateChunk
+--- upstream/sglang_omni/utils/audio.py
++++ port006/sglang_omni/utils/audio.py
+@@ -16,12 +16,14 @@
+ import numpy as np
+ import pybase64
+ import torch
+-import torchaudio
++try:
++    import torchaudio
++except (ImportError, OSError):
++    # Port006: preserve upstream SoundFile/SciPy fallbacks when no DAS audio wheel exists.
++    torchaudio = None
+ import xxhash
+ from numpy.typing import NDArray
+-from sglang.utils import LazyImport
+-
+-current_platform: LazyImport = LazyImport("sglang_omni.platforms", "current_platform")
++from sglang_omni.platforms import current_platform
+ 
+ _DEFAULT_REQUEST_TIMEOUT = 5
+ logger = logging.getLogger(__name__)
+@@ -50,6 +52,8 @@
+     audio decoding falls back to the soundfile backend.
+     """
+     global _TORCHCODEC_USABLE
++    if torchaudio is None:
++        return False
+     if _TORCHCODEC_USABLE is None:
+         try:
+             # Probe import via importlib so the module name never binds a name
+--- upstream/sglang_omni/utils/port_process006.py
++++ port006/sglang_omni/utils/port_process006.py
+@@ -0,0 +1,26 @@
++# SPDX-License-Identifier: Apache-2.0
++"""Small OS/network helpers so the AuK-only fork need not import SRT engines."""
++from dataclasses import dataclass
++import ctypes
++import os
++import signal
++import sys
++
++@dataclass(frozen=True)
++class NetworkAddress:
++    host: str
++    port: int
++    def to_url(self):
++        host = f"[{self.host}]" if ":" in self.host and not self.host.startswith("[") else self.host
++        return f"http://{host}:{self.port}"
++
++def kill_itself_when_parent_died():
++    # Linux parent-death signal, with the documented setup race checked.
++    # Windows imports are supported for CPU unit checks; production target is Linux.
++    if sys.platform != "linux": return
++    parent = os.getppid()
++    libc = ctypes.CDLL(None, use_errno=True)
++    if libc.prctl(1, signal.SIGTERM, 0, 0, 0) != 0:
++        raise OSError(ctypes.get_errno(), "prctl(PR_SET_PDEATHSIG) failed")
++    if os.getppid() != parent or parent == 1:
++        os.kill(os.getpid(), signal.SIGTERM)

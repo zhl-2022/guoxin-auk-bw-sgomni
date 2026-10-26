@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "device": "cpu",
+      "batch": 1,
+      "frequency_exact": true,
+      "bf16_qk_exact": true,
+      "one_dimensional_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "batch": 4,
+      "frequency_exact": true,
+      "bf16_qk_exact": true,
+      "one_dimensional_unchanged": true
+    },
+    {
+      "device": "cuda",
+      "batch": 1,
+      "frequency_exact": true,
+      "bf16_qk_exact": true,
+      "one_dimensional_unchanged": true
+    },
+    {
+      "device": "cuda",
+      "batch": 4,
+      "frequency_exact": true,
+      "bf16_qk_exact": true,
+      "one_dimensional_unchanged": true
+    }
+  ],
+  "before_source_sha256": "3a735cca04f94b9a73ab31801ce266f44fece8428e27bdaac7d8ad3ce34ec020",
+  "after_source_sha256": "233eefb8bf50657af24073ad05c779289a4e4ca52e1da52de9b145ae29bd68fa",
+  "model_weights_changed": false
+}

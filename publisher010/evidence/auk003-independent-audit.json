@@ -1,0 +1,64 @@
+{
+  "independent_audit_pass": true,
+  "generated_wavs_verified": 3264,
+  "wer_rows_verified": 3264,
+  "sim_rows_verified": 3264,
+  "runs": [
+    {
+      "run": 1,
+      "seed": 1234,
+      "samples": 1088,
+      "wer_percent": 1.7245205384532813,
+      "sim": 0.7833432093963902,
+      "word_errors": 198,
+      "reference_words": 11805,
+      "audio_seconds": 4558.379999999995,
+      "generation_wall_seconds": 3427.9307683990337,
+      "aggregate_rtf": 0.7520063637518236,
+      "request_latency_p50_seconds": 12.305814242456108,
+      "request_latency_p95_seconds": 15.508113348856568
+    },
+    {
+      "run": 2,
+      "seed": 2345,
+      "samples": 1088,
+      "wer_percent": 1.6378681811748428,
+      "sim": 0.7824170441136644,
+      "word_errors": 192,
+      "reference_words": 11805,
+      "audio_seconds": 4558.379999999995,
+      "generation_wall_seconds": 3197.262903552968,
+      "aggregate_rtf": 0.7014033282773643,
+      "request_latency_p50_seconds": 11.388578643323854,
+      "request_latency_p95_seconds": 14.541165880858898
+    },
+    {
+      "run": 3,
+      "seed": 3456,
+      "samples": 1088,
+      "wer_percent": 1.7673065922687463,
+      "sim": 0.7879245182345895,
+      "word_errors": 204,
+      "reference_words": 11805,
+      "audio_seconds": 4558.379999999995,
+      "generation_wall_seconds": 3386.773878995795,
+      "aggregate_rtf": 0.7429775224961058,
+      "request_latency_p50_seconds": 12.166141402674839,
+      "request_latency_p95_seconds": 15.466154431924224
+    }
+  ],
+  "three_run_mean_wer_percent": 1.709898437298957,
+  "three_run_mean_sim": 0.7845615905815481,
+  "wer_threshold_percent": 1.0404,
+  "sim_threshold": 0.77224,
+  "numeric_comparison_pass": false,
+  "different_waveforms_between_seeds": {
+    "1-2": 1088,
+    "1-3": 1088,
+    "2-3": 1088
+  },
+  "sim_forward_recomputed_locally": false,
+  "sim_scope": "Audio identities, all raw cosine scores and aggregate recomputed; pinned GPU forward evidence retained",
+  "official_acceptance": false,
+  "submitted": false
+}

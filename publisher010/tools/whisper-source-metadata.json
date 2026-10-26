@@ -1,0 +1,84 @@
+{
+  "repository": "openai/whisper-large-v3",
+  "revision": "06f233fe06e710322aca913c1bc4249a0d71fce1",
+  "files": [
+    {
+      "type": "file",
+      "oid": "f98e6afab120b2c8cc504933527659c5adcc6d30",
+      "size": 21829,
+      "path": "README.md"
+    },
+    {
+      "type": "file",
+      "oid": "1b33526d33aaa60d79f78ae8651dae50b730185a",
+      "size": 34648,
+      "path": "added_tokens.json"
+    },
+    {
+      "type": "file",
+      "oid": "14c6c8cf48b64ebb1cb8b637e2b0fab3a9774972",
+      "size": 1272,
+      "path": "config.json"
+    },
+    {
+      "type": "file",
+      "oid": "f3294dfe3654ac4e362570867369ec48104af59f",
+      "size": 3903,
+      "path": "generation_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "6038932a2a1f09a66991b1c2adae0d14066fa29e",
+      "size": 493869,
+      "path": "merges.txt"
+    },
+    {
+      "type": "file",
+      "oid": "8cd5f415ca1a4669f588af4dfe1c02f3d509a3b3",
+      "size": 3087130976,
+      "lfs": {
+        "oid": "a8e94b85976e5864ba3e9525c7e6c83b2a1eca42d4b797a0c7c24d778e40fd95",
+        "size": 3087130976,
+        "pointerSize": 135
+      },
+      "xetHash": "64ab5cd606647467fcfa2efed9595ba5fb510f7cd573259f06554c90189892ff",
+      "path": "model.safetensors"
+    },
+    {
+      "type": "file",
+      "oid": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0",
+      "size": 52666,
+      "path": "normalizer.json"
+    },
+    {
+      "type": "file",
+      "oid": "931c77a740890c46365c7ae0c9d350ba3cca908f",
+      "size": 340,
+      "path": "preprocessor_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "3c18e97162d572f2b1d62e7e1c7b805f1be11dbe",
+      "size": 2072,
+      "path": "special_tokens_map.json"
+    },
+    {
+      "type": "file",
+      "oid": "3a5e2ba63acdcac9a19ba56cf9bd27f185bfff61",
+      "size": 2480617,
+      "path": "tokenizer.json"
+    },
+    {
+      "type": "file",
+      "oid": "06ffdc8308eae6bb7bd1fdd81e94b0a881a539ab",
+      "size": 282843,
+      "path": "tokenizer_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "0f3456460629e21d559c6daa23ab6ce3644e8271",
+      "size": 1036558,
+      "path": "vocab.json"
+    }
+  ]
+}

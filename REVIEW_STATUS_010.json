@@ -1,0 +1,8 @@
+{
+  "complete_full_publisher_comparison": true,
+  "numeric_comparison_pass": false,
+  "mean_wer_percent": 1.709898437298957,
+  "mean_sim": 0.7845615905815481,
+  "verified_waveforms": 3264,
+  "submitted": false
+}

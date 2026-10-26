@@ -1,0 +1,111 @@
+{
+  "UTC": "2026-10-26T19:06:22.470838+00:00",
+  "generation_model": "tencent/AuK",
+  "generation_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+  "framework": "sgl-project/sglang-omni",
+  "framework_revision": "f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88",
+  "wer_source": "BytedanceSpeech/seed-tts-eval@752f4297f090c46bb1a55a1f7439e5944ddefe8d",
+  "sim_source": "sgl-project/sglang-omni@f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88/benchmarks/metrics/speaker_similarity.py",
+  "sim_assets": {
+    "ready": true,
+    "files": [
+      {
+        "repository": "popsoda2002/seedtts-wavlm-sim",
+        "revision": "508f5410742122c7fb0d94e288152debd92cf629",
+        "file": {
+          "type": "file",
+          "oid": "2e929d8cb4db59a78edd6f5e7c177387f72bc47c",
+          "size": 1301926579,
+          "lfs": {
+            "oid": "51f07e3b94d9e0262a6a675ef5a087be3dd09e8c62e9d886827f44f82fe7f94b",
+            "size": 1301926579,
+            "pointerSize": 135
+          },
+          "xetHash": "43ce8d45a3cba162802371c21bffef4ba756b90c82b38dc11c8116d61fac8347",
+          "path": "wavlm_large_finetune.pth"
+        },
+        "recommendation": "sgl-project/sglang-omni@f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88/benchmarks/metrics/speaker_similarity_assets.py"
+      },
+      {
+        "repository": "s3prl/converted_ckpts",
+        "revision": "8cad0b370e7e35f8d56951d95d2be036ea85510c",
+        "file": {
+          "type": "file",
+          "oid": "b704cf463982904321df737eb8a3fe092a0aa019",
+          "size": 1261965425,
+          "lfs": {
+            "oid": "6fb4b3c3e6aa567f0a997b30855859cb81528ee8078802af439f7b2da0bf100f",
+            "size": 1261965425,
+            "pointerSize": 135
+          },
+          "xetHash": "89d4323da81f5bb40b1a893771b6eaf4eefe38814a201252feda51dfd8ad7530",
+          "path": "wavlm_large.pt"
+        },
+        "recommendation": "sgl-project/sglang-omni@f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88/benchmarks/metrics/speaker_similarity_assets.py"
+      }
+    ]
+  },
+  "python_package": {
+    "name": "s3prl",
+    "version": "0.4.18",
+    "source": "PyPI",
+    "artifact_sha256": "b59dcb12c434edc969b0b0290d4059c3a5c661adecc31db81ed9c510cd7f405e"
+  },
+  "files": {
+    "scripts/submission010/asr_stream010.py": "9a5612425634bb6b868eec9eb17e61a4ca0d6bb85887b79c5d11bec6a30a59a9",
+    "scripts/submission010/download_sim_assets.py": "e0d3f0d97188d364b61da8d7f06a5d89991a4dc0553a9aa38f103f274833cf84",
+    "scripts/submission010/evaluate_vlm.py": "a31e6aa9a0eb47874e05c3f6419010513976a523379dcf497f4a4fb2e17b12c9",
+    "scripts/submission010/evaluate_vlm002.py": "116ad2aca667e70afc4d1f321c5f43fd415043d04b86fbbc39df5d9a0065ce70",
+    "scripts/submission010/evaluate_vlm003.py": "853dcd0f4873e654d5bb718e5101939a931fb0e34acb698e978dbf77c63c817d",
+    "scripts/submission010/evaluate_vlm_resume004.py": "e7396b799dc05e4821e035d1330f4a77dcacb49a112d641f581b18778260435e",
+    "scripts/submission010/generate_auk.py": "10d5f1187e2f46bce6acc847e51ef657ee905ba31716077bdb7893512aa74a0c",
+    "scripts/submission010/generate_auk002.py": "146b4c98467f99f0d7b975b7db5a4556d75e958bef274395dfc569f4edcde711",
+    "scripts/submission010/generate_auk003.py": "a82429abe8a38e4ae7b8dab3ab61bd6da99fb4d772568c57df7a83e6a4f39286",
+    "scripts/submission010/import_sim_assets.py": "9a0209274f26f2baa7f6951d1d80fca21b095fa76150f7d470227552c07e442d",
+    "scripts/submission010/import_whisper_local.py": "ba48e574623193889d814af5e5ce0a9cbfaf1268f441ea1e0705bdf54a6f1277",
+    "scripts/submission010/network_probe.py": "62095ce25b5e75af61c7606c544a4d48dfaec643f25ed8acfe4c390f18976020",
+    "scripts/submission010/pilot_auk003.py": "cb5daede2a4ab5ad4b685273628110862215c65f17523f5064eee35047e0d5bc",
+    "scripts/submission010/prepare_auk_batch003.py": "8cda605386ce10eba3a42a3341fca5574a96d7df5a2df5a00dfba47865214e14",
+    "scripts/submission010/prepare_cvbench.py": "4295cc6a4f3c8d6ac859ce2a9fcac2105d37fd141bbed8b88deeb95a00c033e4",
+    "scripts/submission010/prepare_followup003.py": "144514f87593ad92a317bb7c3a70862ff5cd02f932dadc015b2f362d63707f2d",
+    "scripts/submission010/prepare_mmmu.py": "f568825e2c1c8ee4dee7063fe38b15be5c3289c0e75b214ee1fe355de9afb797",
+    "scripts/submission010/prepare_seedtts.py": "e38b27b85d7f1935eb8e932d2c53bcea0d43a98b27dd4c42af39fe584852320c",
+    "scripts/submission010/prepare_seedtts002.py": "af612c67ed9e55c5a76028acf2e034272860a73cc2516b0af63e1056628da88a",
+    "scripts/submission010/queue_auk_followup004.py": "1488de409fdafd7e2b503538934b11132560b3b75c40ba3223356bfa5afd6f4f",
+    "scripts/submission010/queue_auk_score003.py": "39d81b58be7394191e4f3cd8021c131f2ab0baad1b61530db3cfca4c1b093227",
+    "scripts/submission010/queue_kimi_finish004.py": "7470a437f4f1efc2e58047bd367c73f8d5ef788f348ee4e48e35fd6ef3777a29",
+    "scripts/submission010/queue_sim003.py": "20251779144455deb43e89aba29ae127b245ca01d10a1c5ca96f2ad4bcd5e80f",
+    "scripts/submission010/rebalance_score_queues004.py": "683f460d84e8791ad108720342a355338749313b39a3fe2ebe54db5a04427b41",
+    "scripts/submission010/remote_prepare_data.py": "652a2c17aa978be273533e5a1a854d2482c37993b05f9cdf40e3668189784aad",
+    "scripts/submission010/replay_delivery010.py": "aaa617c4e2e8810ab69ad153bfe11123f6bebd0fac3c2eb0751ecc26ab11fae2",
+    "scripts/submission010/robo_reference.py": "16543082d7fec635eb056c70f28771277d78533fcccabcde81c01720458d7b19",
+    "scripts/submission010/run_auk_generation.py": "6f2a6cc93f63b0429780540bf068bc8079f5422606293beb0c8bc08fdd4d16f4",
+    "scripts/submission010/run_auk_generation002.py": "f89b6dabe1da6a66dfd70635a8516820559d2fa08a1d4e0149ec64e90d9ea6e4",
+    "scripts/submission010/run_auk_generation003.py": "2027ef45625e6bd41342725969db4e249e4dbc89a49352f19f1be38814285a76",
+    "scripts/submission010/run_vlm_experiment.py": "7e2db95dd5568456d6e7019fbd8f121840c32625d3ce9a99d6f1a27dd2640cbb",
+    "scripts/submission010/run_vlm_experiment002.py": "d3f9647a5df504cc9f1d9f476da2e7a2627174d53cd366be9d577ced73a52963",
+    "scripts/submission010/run_vlm_experiment003.py": "369085ac0ec1692c1319e73066d3cec994753c5731a61a75cccebd3de57c8963",
+    "scripts/submission010/run_vlm_resume004.py": "090a6706ebe4d5a93a504be4787d2ba78f45aaaa2549175884f156f84f9cc02b",
+    "scripts/submission010/score_auk.py": "dfb6efc62bff7ebfcb988f6b2ae051ec278faff329b54e12a9217bb794c0c6b9",
+    "scripts/submission010/score_auk003.py": "774694960e7676505a9075e51b0d2daef73e5462a02d54322442e51886bcd3e1",
+    "scripts/submission010/score_sim003.py": "0a1de77e383b30295980aec162403ad708d28d0b2c7890e750b60355d85f0482",
+    "scripts/submission010/stage_auk.py": "09a8b4b63e43a513b0d3367520e578347c0fefb3e56b994605c5d684a85d56a2",
+    "scripts/submission010/stage_auk002.py": "cacfe068306e10171417e0f666038b41699159298a7e727ee9d3882eac7d77d2",
+    "scripts/submission010/stage_auk004.py": "58b572ba7b01208cd487f5fb58dbd5494fa905fe12c4711f9dfd2fdd1338f950",
+    "scripts/submission010/stage_vlm.py": "1eed79bf465af127d6f00a01e5f64796c848917a00a601ef0d72442673de7bf2",
+    "scripts/submission010/vendor/cvbench_eval.py": "607b13ae049ff8bc49c10ea112853afb2d73d26e9b133d1daba089420fb4ca69",
+    "scripts/submission010/vendor/mmmu_eval.py": "6e8bb4d9510c4757f248240f3a757634edfcdb72bf5bbee4bc76ed6c16845679",
+    "scripts/submission010/vendor/speaker_similarity.py": "18528106c718384e6e096b79031c78fbc90890344d80ba6ae3d4cbadc0d2545e",
+    "scripts/submission010/vendor/flagevalmm/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/submission010/vendor/flagevalmm/evaluator/common_types.py": "1b4639d1f5aa7173d86ccb803dde82a5c0ea53feca5e1ea628ffff4d486f4d98",
+    "scripts/submission010/vendor/flagevalmm/evaluator/pre_process.py": "2e276883a281ba8777e2c57684fe60f2fda0b0b06a0ddb2dfbb01b9486413205",
+    "scripts/submission010/vendor/flagevalmm/evaluator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_score_protocol010.py": "bd4e76ad85bed1d10dbbd564e3ccce91e248659253def27f241d5b7988fefa5b",
+    "tests/test_vlm_completion002.py": "16d8aa8f31a21a5b8433a1f9e398dff7989d5a1489a4390a8c39c65e4cea457b",
+    "scripts/audit_auk010.py": "b5393dad3c3b8553872bf0cce69f5384c93e26d4a02016b98d619a2ca41c38af",
+    "scripts/audit_auk_generation010.py": "a3b0c48e1ca0a72e2e0b0eadfc80d5d937958b58f26da361ae1327c8754fbdbb",
+    "scripts/submission010/export_auk_review005.py": "d9a7c2a5c3d54473181f2a15aa0ca11fb6e6c203be48b83eea5c09e7641c0432"
+  },
+  "submitted": false,
+  "upstream_sources_are_public": true
+}

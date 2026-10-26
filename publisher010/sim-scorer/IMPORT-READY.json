@@ -1,0 +1,5 @@
+{
+  "ready": true,
+  "safe_tensor_load_pass": true,
+  "s3prl": "0.4.18"
+}

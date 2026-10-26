@@ -1,0 +1,11 @@
+Newly authored compatibility adapters, bounded pilot, checks and documentation: copyright reserved.
+No new repository-wide redistribution license has been selected.
+
+Upstream sources retain their own original notices and licenses:
+- SGLang-Omni framework: Apache-2.0.
+- AuK model implementation: MIT and file-specific Apache-2.0 notices, including NVIDIA / alias-free code.
+- AuK checkpoint: MIT.
+- Qwen2.5-Omni-3B checkpoint: Qwen RESEARCH LICENSE AGREEMENT.
+
+See vendor/LICENSE, vendor/sglang_omni/models/auk/LICENSE, individual file headers,
+and the separately downloaded model license files. Model weights are not included.

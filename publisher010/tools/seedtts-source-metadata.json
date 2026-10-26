@@ -1,0 +1,19 @@
+{
+  "repository": "zhaochenyang20/seed-tts-eval-arrow",
+  "revision": "81d1901582dee1293a537a6d945d084301712c41",
+  "files": [
+    {
+      "type": "file",
+      "oid": "b7d78eba97d48f59912defe1f7e79f3022368e73",
+      "size": 247555423,
+      "lfs": {
+        "oid": "5849b41b49cae996328c06d2c5791717c3bafc369bddfa1ec4f86761bb8bc0ca",
+        "size": 247555423,
+        "pointerSize": 134
+      },
+      "xetHash": "e1c5938200890761538dda5ca5edeabb3a1ab0a5e190fcd218be43384a4f0df2",
+      "path": "data/en-00000-of-00001.parquet"
+    }
+  ],
+  "purpose": "Complete 1000-sample English SeedTTS; replica recommended by official SGLang-Omni"
+}
