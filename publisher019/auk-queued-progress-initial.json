@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-10-27T17:02:55.051338+00:00",
+  "controller_pid": 45258,
+  "state": "waiting_owned_robo_queue",
+  "source_sha256": "187a55cbf1729f1773ca2527268169d776d6a35c977608702f769f9ae5e0bba6",
+  "dataset_count": 400,
+  "complete_rounds_required": 3,
+  "seeds": [
+    1234,
+    2345,
+    3456
+  ],
+  "full_target_requests": 1200,
+  "data_sha256": "ea61e12ac36e6c1520a7c41ed608ebcbc7471933d47f5964b1e5dde02cc98701",
+  "longest_case_first_before_predictions": true,
+  "max_seconds_profile": 100,
+  "shape_validation_complete": false,
+  "GPU_started": false,
+  "phases": {},
+  "generation_rows": 0,
+  "SIM_rows": 0,
+  "numeric_pass": null,
+  "submitted": false,
+  "instance_shutdown_requested": false
+}

@@ -1,0 +1,27 @@
+{
+  "torch": {
+    "version": "2.10.0",
+    "root": "C:\\Users\\zhl\\anaconda3\\Lib\\site-packages",
+    "metadata_sha256": "7533a85701acaee468218af4497a84309d365ab02118f9547c01f271ae75a4e2"
+  },
+  "numpy": {
+    "version": "2.2.6",
+    "root": "C:\\Users\\zhl\\anaconda3\\Lib\\site-packages",
+    "metadata_sha256": "229f3544b02805e0f6a12030e155d8a45fd3a4100b3291574175e6a76f20e1e1"
+  },
+  "scipy": {
+    "version": "1.13.1",
+    "root": "C:\\Users\\zhl\\anaconda3\\Lib\\site-packages",
+    "metadata_sha256": "daa3b9481a7879f190a33428547728d6b5d3151996b2bf2b8c64c5d9dd5820ee"
+  },
+  "transformers": {
+    "version": "4.57.3",
+    "root": "C:\\Users\\zhl\\anaconda3\\Lib\\site-packages",
+    "metadata_sha256": "ab7bf54a8650a611b6e045af2b681993f261302f7ee4dca8857712de0737c577"
+  },
+  "modelscope": {
+    "version": "1.35.0",
+    "root": "C:\\Users\\zhl\\anaconda3\\Lib\\site-packages",
+    "metadata_sha256": "11dd0091311a4ae27b2c2a5f956aba6e26f07191509613f992ee8476701ab179"
+  }
+}

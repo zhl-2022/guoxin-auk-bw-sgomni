@@ -1,0 +1,124 @@
+{
+  "_id": "65bba9973786e68f02a5624a",
+  "id": "funasr/paraformer-zh",
+  "private": false,
+  "pipeline_tag": "automatic-speech-recognition",
+  "library_name": "funasr",
+  "tags": [
+    "funasr",
+    "Paraformer",
+    "FunASR",
+    "ASR",
+    "non-autoregressive",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "arxiv:2206.08317",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 2131,
+  "likes": 71,
+  "modelId": "funasr/paraformer-zh",
+  "author": "funasr",
+  "sha": "d7811ee3ac581fbcfdeb37c98c6ba674028433dc",
+  "lastModified": "2026-06-19T09:39:26.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "apache-2.0",
+    "language": [
+      "zh",
+      "en"
+    ],
+    "metrics": [
+      "cer"
+    ],
+    "pipeline_tag": "automatic-speech-recognition",
+    "tags": [
+      "Paraformer",
+      "FunASR",
+      "ASR",
+      "non-autoregressive",
+      "speech-recognition"
+    ],
+    "library_name": "funasr"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "684ad6fd2c6e1825ace7def3199262793a149622",
+      "size": 1579
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "09724db9b2a03c1db73149e85e4bd03a6a1f279e",
+      "size": 3537
+    },
+    {
+      "rfilename": "am.mvn",
+      "blobId": "681910cd1ab6458b61474cdbf0d1ac5e810f7b0d",
+      "size": 11203
+    },
+    {
+      "rfilename": "config.yaml",
+      "blobId": "c0a9f403c8e62017afcd765e13006617f3e43471",
+      "size": 2509
+    },
+    {
+      "rfilename": "configuration.json",
+      "blobId": "6f77310bef84268f6c82ca0adf36a43d695a50ea",
+      "size": 472
+    },
+    {
+      "rfilename": "example/asr_example.wav",
+      "blobId": "e4e7978644d039cd7db5b83796e5467377c187ab",
+      "size": 417742,
+      "lfs": {
+        "sha256": "732f28a4445eb2b656675b946695e59752b7df824d475c4bc531c441f43b30f9",
+        "size": 417742,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "fig/struct.png",
+      "blobId": "4c3d7855faae8b59f20ac14eb5416d5e99f998cd",
+      "size": 49870
+    },
+    {
+      "rfilename": "model.pt",
+      "blobId": "0bcfb7bd4a61ef09515db1e67d32b4a4b374161c",
+      "size": 880502012,
+      "lfs": {
+        "sha256": "5bba782a5e9196166233b9ab12ba04cadff9ef9212b4ff6153ed9290ff679025",
+        "size": 880502012,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "seg_dict",
+      "blobId": "fb19e07f2870b09b08226a42d7d5d6d26a3f3a16",
+      "size": 8287834
+    },
+    {
+      "rfilename": "tokens.json",
+      "blobId": "f8bc9c31ab1ba458aee5423fa24164958153f923",
+      "size": 93676
+    }
+  ],
+  "spaces": [
+    "FunAudioLLM/Fun-CineForge-Demo",
+    "FunAudioLLM/FunClip",
+    "FunAudioLLM/Fun-ASR-Nano-GPU-Debug",
+    "jhansss/SingingSDS",
+    "espnet/SingingSDS",
+    "funasr/demo",
+    "hoangquocvietbro/demo",
+    "mrfakename/paraformer-zh"
+  ],
+  "createdAt": "2024-02-01T14:24:23.000Z",
+  "usedStorage": 880919754
+}

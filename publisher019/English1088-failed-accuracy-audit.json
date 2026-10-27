@@ -1,0 +1,22 @@
+{
+  "archive_sha256": "f407c3089820177cd3e897815f3e752643ca3e40dc8a60edcd95966a156d2e0b",
+  "files": 1429,
+  "CRC_manifest_and_file_hashes": true,
+  "all_passed": true,
+  "full_split": true,
+  "samples": 1088,
+  "audio_hashes_and_PCM_verified": 1088,
+  "requests_identical_to_old_seed1234_verified": 1088,
+  "WER_recomputed": 1088,
+  "SIM_scalar_mean_recomputed": 1088,
+  "WER_percent": 1.6790354883726424,
+  "SIM": 0.783235935288317,
+  "previous_same1088_batch4_WER_percent": 1.7245205384532807,
+  "WER_upper": 1.0404,
+  "SIM_lower": 0.77224,
+  "WER_pass": false,
+  "SIM_pass": true,
+  "numeric_pass": false,
+  "excluded_samples": 0,
+  "submitted": false
+}

@@ -1,0 +1,9 @@
+{
+  "environment": "E:\\hg20261019\\external\\auk-zh-eval019",
+  "python": "E:\\hg20261019\\external\\auk-zh-eval019\\Scripts\\python.exe",
+  "protected_base_packages_unchanged": true,
+  "metric_inference_device": "cpu",
+  "BW_model_requests": 0,
+  "GPU_executed": false,
+  "model_import_and_inference_verified": false
+}

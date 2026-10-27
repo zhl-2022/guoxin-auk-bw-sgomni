@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-27T17:05:02.740553+00:00",
+  "watcher_pid": 19812,
+  "state": "waiting_owned_BW_generation_and_SIM",
+  "credentials_persisted": false,
+  "source_sha256": "56a2c34c00916c341865b113b77616d78676cb27643d46bcca3ddf52d46279da",
+  "remote": "/root/private_data/guoxin-session019/auk-zhhard001",
+  "BW_model_requests": 0,
+  "GPU_launched_by_watcher": false,
+  "submitted": false,
+  "last_successful_check_utc": "2026-10-27T17:06:33.754315+00:00",
+  "remote_state": "waiting_owned_robo_queue",
+  "remote_generation_rows": 0
+}

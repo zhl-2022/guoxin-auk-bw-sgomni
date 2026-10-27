@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-10-27T16:57:51.411692+00:00",
+  "archive": "E:\\hg20261019\\dist\\session019-auk-zhhard-queue001.zip",
+  "sha256": "7531ea92033be065b6a664dc3d5006e619e59aeb0568ff5b4e4edc42bd6df263",
+  "bytes": 74922306,
+  "files": 731,
+  "controller_sha256": "187a55cbf1729f1773ca2527268169d776d6a35c977608702f769f9ae5e0bba6",
+  "CPU_CER_probe_completed": true,
+  "GPU_started": false,
+  "queue_started": false,
+  "submitted": false
+}
