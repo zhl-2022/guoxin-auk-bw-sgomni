@@ -1,0 +1,25 @@
+{
+  "UTC": "2026-10-28T05:09:57.909330+00:00",
+  "controller_exited": true,
+  "wrapper_exited": true,
+  "owned_processes_cleaned": true,
+  "own_port_closed": true,
+  "archive_sha256": "2d19a0fdebe39f4368991438c9cd3d8db79f5f49b14f476b552e4985e805fa77",
+  "archive_bytes": 271199229,
+  "run_id": "7a82802be4f04837a941e862687318f8",
+  "root_complete": true,
+  "root_phases": {
+    "selfcheck": 0,
+    "bench_plan": 0,
+    "dry_run": 0,
+    "launch": 0,
+    "environment": 0,
+    "smoke": 0,
+    "verify": 0,
+    "stop": 0
+  },
+  "root_ended_utc": "2026-10-28T05:05:10.000429+00:00",
+  "full_accuracy_samples_preserved": 1200,
+  "technical_delivery_complete": false,
+  "submitted": false
+}

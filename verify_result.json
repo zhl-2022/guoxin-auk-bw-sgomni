@@ -1,0 +1,28 @@
+{
+  "verification_scope": "Preserved complete3x400 formal numeric comparison plus a separate fixed100 GPU root reproduction.",
+  "formal_complete_runs": 3,
+  "formal_samples_per_run": 400,
+  "formal_audio_total": 1200,
+  "excluded": 0,
+  "CER_percent_mean": 5.957622968852493,
+  "CER_upper": 6.0282,
+  "SIM_mean": 0.780468952814738,
+  "SIM_lower": 0.76636,
+  "formal_numeric_pass": true,
+  "root_replay_completed": true,
+  "root_subset_samples": 100,
+  "root_subset_CER_percent": 7.528599692985805,
+  "previous_identical100_CER_percent": 7.484441580310172,
+  "root_subset_publisher_full_split_comparison_applicable": false,
+  "root_same_actual_model_config": true,
+  "performance_measured_requests": 96,
+  "independent_audits": [
+    "publisher032/auk-full1200-independent-audit.json",
+    "publisher032/auk-performance96-independent-audit.json",
+    "publisher032/auk-root100-independent-audit.json",
+    "publisher032/auk-root100-CER-independent-audit.json"
+  ],
+  "technical_delivery_complete": false,
+  "official_acceptance": false,
+  "submitted": false
+}

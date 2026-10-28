@@ -1,0 +1,32 @@
+{
+  "UTC": "2026-10-28T05:11:06.342507+00:00",
+  "audit_complete": true,
+  "audit_source_sha256": "8be14f4cc668d290dc6149a0aedadeec90337c15852315b9214ed1eec11004f7",
+  "archive_sha256": "2d19a0fdebe39f4368991438c9cd3d8db79f5f49b14f476b552e4985e805fa77",
+  "archive_payloads": 1384,
+  "all_archive_CRC_payload_SHA_verified": true,
+  "exact_fixed_Git_files_verified": 1251,
+  "Git_commit": "5446333abde67a6169e258e7a6d07b59a3655b7c",
+  "all20_model_file_runtime_identities_verified": true,
+  "root_GPU_phases": {
+    "selfcheck": 0,
+    "bench_plan": 0,
+    "dry_run": 0,
+    "launch": 0,
+    "environment": 0,
+    "smoke": 0,
+    "verify": 0,
+    "stop": 0
+  },
+  "actual_profile_same_except_task_UUID": true,
+  "all100_reference_input_request_and_raw_WAV_verified": true,
+  "root100_generation_complete": true,
+  "root100_CPU_metric_pending": true,
+  "root_subset_count": 100,
+  "original_public_split_count": 400,
+  "full_formal_accuracy_preserved_samples": 1200,
+  "new_model_requests_in_audit": 0,
+  "technical_delivery_complete": false,
+  "official_acceptance": false,
+  "submitted": false
+}

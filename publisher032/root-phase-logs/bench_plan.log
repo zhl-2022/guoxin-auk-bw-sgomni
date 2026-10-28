@@ -1,0 +1,33 @@
+{
+  "scope": "Buffered-WAV AuK API performance; not text-token six-load benchmark",
+  "concurrencies": [
+    1,
+    2,
+    4
+  ],
+  "rounds": 2,
+  "requests_per_group": 16,
+  "measured_requests": 96,
+  "separate_warmup_requests": 6,
+  "selected_ids": [
+    "00004507-00000024",
+    "00004509-00000047",
+    "00004511-00000014",
+    "00004516-00000111",
+    "00004517-00000108",
+    "00004524-00000118",
+    "00004542-00000047",
+    "00004553-00000017",
+    "00004570-00000072",
+    "00004591-00000083",
+    "00004592-00000078",
+    "00004595-00000033",
+    "00004604-00000054",
+    "00004609-00000038",
+    "00004628-00000065",
+    "00004634-00000021"
+  ],
+  "TTFA_boundary": "First response-body byte; not streaming speech TTFT",
+  "model_requests_executed": 0,
+  "plan_only": true
+}

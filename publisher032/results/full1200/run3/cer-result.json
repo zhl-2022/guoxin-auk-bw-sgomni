@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "samples": 400,
+  "excluded": 0,
+  "CER_percent": 5.824770311221132,
+  "publisher_three_run_mean_CER_percent": 5.91,
+  "note": "A single full run is not the required three-run aggregate. SIM is separate.",
+  "AuK_technical_delivery_complete": false,
+  "submitted": false
+}

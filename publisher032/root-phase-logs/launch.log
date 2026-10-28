@@ -1,0 +1,30 @@
+{
+  "run_id": "7a82802be4f04837a941e862687318f8",
+  "status": "ready",
+  "created_utc": "2026-10-28T04:50:00.881522+00:00",
+  "supervisor_pid": 65081,
+  "supervisor_token": "319037849",
+  "config_path": "/root/private_data/guoxin-session031/auk-root-replay001/project/candidate/runtime/config-7a82802be4f04837a941e862687318f8.json",
+  "url": "http://127.0.0.1:30139",
+  "max_runtime_seconds": 10800,
+  "framework": "sglang-omni-AuK-native-Torch-port006",
+  "precision": "bf16",
+  "command": [
+    "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+    "-B",
+    "/root/private_data/guoxin-session031/auk-root-replay001/project/candidate/serve.py",
+    "--model-path",
+    "/root/private_data/guoxin-candidates/models/auk006",
+    "--encoder-path",
+    "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+    "--runtime-dir",
+    "/tmp/a006-7a82802be4f04837a941e862687318f8",
+    "--port",
+    "30139"
+  ],
+  "server_pid": 65082,
+  "server_token": "319037859",
+  "ready_utc": "2026-10-28T04:51:12.644552+00:00"
+}
+Service ready. The supervisor continues enforcing its runtime limit.
+{"action": "launch", "run_id": "7a82802be4f04837a941e862687318f8", "exit_code": 0, "official_accuracy_verified": false}

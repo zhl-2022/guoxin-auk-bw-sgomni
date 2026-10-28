@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "samples": 100,
+  "excluded": 0,
+  "CER_percent": 7.528599692985805,
+  "original_split_count": 400,
+  "subset_fraction": 0.25,
+  "numeric_pass": null,
+  "note": "Additional fixed100 root-reproduction subset only; full3x400 formal accuracy is preserved separately. Do not compare this length-stratified subset directly to the full-split publisher baseline.",
+  "AuK_technical_delivery_complete": false,
+  "submitted": false
+}

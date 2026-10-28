@@ -1637,5 +1637,7 @@
       "sha256": "fb685e6e8077bac9ddad631d993d8b1adc866392dac63067b4f9191873f6ad8c"
     }
   ],
-  "tested_actual_profile_source": "session030 closed same-profile96 performance archive; runtime max10800 and serve max100 are copied as executed, not a new profile"
+  "tested_actual_profile_source": "session030 closed same-profile96 performance archive; runtime max10800 and serve max100 are copied as executed, not a new profile",
+  "candidate004_archive_reference_is_historical": true,
+  "current_source_identity": "Use exact current327 per-file SHA records and final Git tree; source profile copied from completed030 performance."
 }

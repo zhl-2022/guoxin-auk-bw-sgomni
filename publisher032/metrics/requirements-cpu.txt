@@ -1,0 +1,8 @@
+# Separate CPU metric environment; do not install into the AuK serving venv.
+# First install torch==2.10.0 and torchaudio==2.10.0 from the official CPU wheel index.
+funasr==1.4.16
+numpy==1.26.4
+scipy==1.13.1
+jiwer==3.0.5
+zhconv==1.4.3
+zhon==2.1.1

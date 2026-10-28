@@ -1,0 +1,17 @@
+{
+  "UTC": "2026-10-28T05:07:09.384477+00:00",
+  "model_plan20_passed": true,
+  "all20_original_required_files_exact_match": true,
+  "source_rejections": [
+    "traversal",
+    "unfixed_url",
+    "wrong_namespace"
+  ],
+  "metric_plan8_created_no_files": true,
+  "metric_existing8_all_bytes_SHA_verified": true,
+  "native_venv_missing_plan_only_not_installed": true,
+  "native_protected_packages_modified": false,
+  "GPU_imported": false,
+  "new_AuK_requests": 0,
+  "new_model_downloads": 0
+}

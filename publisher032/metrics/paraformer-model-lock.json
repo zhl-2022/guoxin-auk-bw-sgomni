@@ -1,0 +1,72 @@
+{
+  "model": "funasr/paraformer-zh",
+  "revision": "d7811ee3ac581fbcfdeb37c98c6ba674028433dc",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3537,
+      "sha256": "513555aa084cc8a00e7bf1c916e659dfa9f70166ce6aaf6fe281c537bd6f1053",
+      "source_blob": "09724db9b2a03c1db73149e85e4bd03a6a1f279e",
+      "source_lfs": null
+    },
+    {
+      "path": "am.mvn",
+      "bytes": 11203,
+      "sha256": "29b3c740a2c0cfc6b308126d31d7f265fa2be74f3bb095cd2f143ea970896ae5",
+      "source_blob": "681910cd1ab6458b61474cdbf0d1ac5e810f7b0d",
+      "source_lfs": null
+    },
+    {
+      "path": "config.yaml",
+      "bytes": 2509,
+      "sha256": "bfd424b9f61846aac63591e96fe24d66b35f4643bddcb4b9bb759db8f987ab79",
+      "source_blob": "c0a9f403c8e62017afcd765e13006617f3e43471",
+      "source_lfs": null
+    },
+    {
+      "path": "configuration.json",
+      "bytes": 472,
+      "sha256": "b7d2917954fc547e43ad61486a5248596738cf5909907eade11e71c56f446f34",
+      "source_blob": "6f77310bef84268f6c82ca0adf36a43d695a50ea",
+      "source_lfs": null
+    },
+    {
+      "path": "example/asr_example.wav",
+      "bytes": 417742,
+      "sha256": "732f28a4445eb2b656675b946695e59752b7df824d475c4bc531c441f43b30f9",
+      "source_blob": "e4e7978644d039cd7db5b83796e5467377c187ab",
+      "source_lfs": {
+        "sha256": "732f28a4445eb2b656675b946695e59752b7df824d475c4bc531c441f43b30f9",
+        "size": 417742,
+        "pointerSize": 131
+      }
+    },
+    {
+      "path": "model.pt",
+      "bytes": 880502012,
+      "sha256": "5bba782a5e9196166233b9ab12ba04cadff9ef9212b4ff6153ed9290ff679025",
+      "source_blob": "0bcfb7bd4a61ef09515db1e67d32b4a4b374161c",
+      "source_lfs": {
+        "sha256": "5bba782a5e9196166233b9ab12ba04cadff9ef9212b4ff6153ed9290ff679025",
+        "size": 880502012,
+        "pointerSize": 134
+      }
+    },
+    {
+      "path": "seg_dict",
+      "bytes": 8287834,
+      "sha256": "59a2ef803a3f1648ad03a2e1480db1c1ee0c0d7dc4ef4dbd16cea33944329022",
+      "source_blob": "fb19e07f2870b09b08226a42d7d5d6d26a3f3a16",
+      "source_lfs": null
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 93676,
+      "sha256": "2b20c2b12572d682afff84ce1c8d560f67b8b32a4c1f21567411d141ed352127",
+      "source_blob": "f8bc9c31ab1ba458aee5423fa24164958153f923",
+      "source_lfs": null
+    }
+  ],
+  "all_files_hashed": true,
+  "GPU_executed": false
+}

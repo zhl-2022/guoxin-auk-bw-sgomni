@@ -1,0 +1,30 @@
+{
+  "UTC": "2026-10-28T04:47:37.796376+00:00",
+  "wrapper_pid": 65047,
+  "wrapper_start_token": "319023510",
+  "argv": [
+    "/usr/bin/timeout",
+    "--signal=INT",
+    "--kill-after=120",
+    "9800",
+    "/usr/bin/python3",
+    "-u",
+    "/root/replay_auk_root031.py",
+    "--archive",
+    "/root/session031-auk-root-source-v1.zip",
+    "--lock",
+    "/root/auk-root-project-lock031-v1.json",
+    "--archive-sha",
+    "3ec4a599a5e328b609d0080ec36ce916c85b486d7262bed790ceddc9a1757833",
+    "--lock-sha",
+    "acb0ad57937cb753ad2b8ec5b3a9f3ac3578be946547d822087bfdc96f82a551"
+  ],
+  "controller_source_sha256": "823799644a361b7a736437650017c62f49a01033dc1bb0f4536dd87401e48d97",
+  "archive_sha256": "3ec4a599a5e328b609d0080ec36ce916c85b486d7262bed790ceddc9a1757833",
+  "project_lock_sha256": "acb0ad57937cb753ad2b8ec5b3a9f3ac3578be946547d822087bfdc96f82a551",
+  "progress": "/root/private_data/guoxin-session031/auk-root-replay001/progress.json",
+  "full_accuracy_generation_rerun": false,
+  "new_performance_requests": 0,
+  "root_request_target": 100,
+  "Notebook_shutdown_requested": false
+}

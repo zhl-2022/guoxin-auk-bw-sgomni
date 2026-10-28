@@ -1,0 +1,23 @@
+{
+  "UTC": "2026-10-28T05:12:17.495345+00:00",
+  "metric": "SeedTTS Chinese CER",
+  "metric_device": "cpu",
+  "metric_model": "funasr/paraformer-zh",
+  "metric_model_revision": "d7811ee3ac581fbcfdeb37c98c6ba674028433dc",
+  "scorer_source_sha256": "be5e608e3fa1d99ddeb92853dd9e768348633702b51c6a607ed557dcf7bbb2ea",
+  "worker_sha256": "f5abf8389ade58f5ac81e46ab4ed527b0781cae33cab0d0263dc881528b4aa81",
+  "target_text_given_to_recognizer": false,
+  "BW_model_requests": 0,
+  "GPU_executed": false,
+  "versions": {
+    "torch": "2.10.0",
+    "torchaudio": "2.10.0+cpu",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "funasr": "1.4.16",
+    "jiwer": "3.0.5",
+    "zhconv": "1.4.3",
+    "zhon": "2.1.1"
+  },
+  "model_cpu_initialization_seconds": 3.63506430000416
+}

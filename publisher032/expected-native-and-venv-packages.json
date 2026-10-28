@@ -1,0 +1,96 @@
+{
+  "UTC": "2026-10-28T04:59:59.721857+00:00",
+  "prefix": "/root/private_data/guoxin-auk-port006/venv002",
+  "base_prefix": "/usr",
+  "packages": {
+    "antlr4-python3-runtime": {
+      "version": "4.9.3",
+      "metadata_sha256": "bf325e5155318385a2fcc4680742da710bbadf13a3d1c0979a98b3487980f261"
+    },
+    "audioread": {
+      "version": "3.0.1",
+      "metadata_sha256": "3c5a7b0c8225a12684774f2df639638a5f4b14e460a326eb487d22143c91267b"
+    },
+    "av": {
+      "version": "14.2.0",
+      "metadata_sha256": "e6fc0587e5afa2e459b4be3b65a4e1f0ba8a490b3898126c9ebc2eae398b448b"
+    },
+    "lazy-loader": {
+      "version": "0.4",
+      "metadata_sha256": "c022b48b5a90cbd853aa926dfa84bf24f4e6a6e0f5646ab0fc617c5639f0bbed"
+    },
+    "librosa": {
+      "version": "0.11.0",
+      "metadata_sha256": "5aaba06be0f28ca1ca776f8884fc0945f752a38d7ddca249403644d6f685c6d3"
+    },
+    "numpy": {
+      "version": "1.25.0",
+      "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+    },
+    "omegaconf": {
+      "version": "2.3.0",
+      "metadata_sha256": "ab2dcbf0e3e70cc75dca1d894f8953e7de8b651dc2dc28f08f350bfa5787badb"
+    },
+    "pooch": {
+      "version": "1.8.2",
+      "metadata_sha256": "e8a9ec61c85c7f0a703a12d3c26f72411ed1a356e63bef5f23f3a9dca8e05226"
+    },
+    "pydantic": {
+      "version": "2.12.5",
+      "metadata_sha256": "a3ba23e895191fed69b8323cbcbcdc82984ca0b6a3cdc62c48a2341886a9c08d"
+    },
+    "safetensors": {
+      "version": "0.7.0",
+      "metadata_sha256": "6809326fbf17444dd520ab19f0a55b7a18476dbe52a430466bbf5389967c2aaa"
+    },
+    "scikit-learn": {
+      "version": "1.6.1",
+      "metadata_sha256": "2fcfa92b3af08245a5abeb3e24c83c023f3c8cb98c384f567b73bdaa344de23f"
+    },
+    "soundfile": {
+      "version": "0.13.1",
+      "metadata_sha256": "0e4254c32f48852e0789e265aee10208a9bb778113ae8c5420d680393b7d32a1"
+    },
+    "soxr": {
+      "version": "0.5.0.post1",
+      "metadata_sha256": "777202f28af32a0ae3be3e2c005f3738e2c2b8c87d4a9206cfc4afa54402e100"
+    },
+    "threadpoolctl": {
+      "version": "3.6.0",
+      "metadata_sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341"
+    },
+    "tokenizers": {
+      "version": "0.22.2",
+      "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc"
+    },
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+    },
+    "triton": {
+      "version": "3.6.0+gitc73250c4.staging",
+      "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+    },
+    "x-transformers": {
+      "version": "1.31.14",
+      "metadata_sha256": "423e72471841985f3b1ed61e5ae1538a261565ff9e0dd5da6e15bf3f931c43bc"
+    }
+  },
+  "GPU_imported": false
+}

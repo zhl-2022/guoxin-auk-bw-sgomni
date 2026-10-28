@@ -1,0 +1,27 @@
+{
+  "UTC": "2026-10-28T03:53:20.012786+00:00",
+  "state": "generation_and_SIM_complete_CER_pending",
+  "controller_pid": 18635,
+  "source_sha256": "99d8503920ebd7aa804654270b6a3d7e2f079da9b8faa842e166a2b36c73d163",
+  "generation_complete": true,
+  "generation_rows": 1200,
+  "all_original_audio_requests_and_shapes_verified": true,
+  "original_generation_root": "/root/private_data/guoxin-session023/auk-zhhard-B001",
+  "original_generation_progress_sha256": "72c2ca677cba9203da58813487aea722a0fc494baf6a9d1060443b02cf3984c7",
+  "old_error_preserved": "ImportError('libgalaxyhip.so.5: cannot open shared object file: No such file or directory')",
+  "SIM_rows": 1200,
+  "SIM_complete": true,
+  "CER_complete": false,
+  "owned_service_stopped": true,
+  "phases": {
+    "stop": 0
+  },
+  "AuK_generation_requests": 0,
+  "numeric_pass": null,
+  "technical_delivery_complete": false,
+  "submitted": false,
+  "Notebook_shutdown_requested": false,
+  "SIM_scorer_sha256": "18528106c718384e6e096b79031c78fbc90890344d80ba6ae3d4cbadc0d2545e",
+  "SIM_mean": 0.7804689528147379,
+  "ended_utc": "2026-10-28T03:57:19.674040+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "dry_run": true,
+  "run_id": "7a82802be4f04837a941e862687318f8",
+  "configuration": {
+    "task": "/root/private_data/guoxin-session031/auk-root-replay001/project/candidate",
+    "framework": "sglang-omni-AuK-native-Torch-port006",
+    "precision": "bf16",
+    "model_id": "tencent/AuK",
+    "model_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+    "model_path": "/root/private_data/guoxin-candidates/models/auk006",
+    "encoder_path": "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+    "host": "127.0.0.1",
+    "port": 30139,
+    "url": "http://127.0.0.1:30139",
+    "load_timeout": 1200,
+    "max_runtime": 10800,
+    "stop_grace": 45,
+    "tp": 1,
+    "command": [
+      "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+      "-B",
+      "/root/private_data/guoxin-session031/auk-root-replay001/project/candidate/serve.py",
+      "--model-path",
+      "/root/private_data/guoxin-candidates/models/auk006",
+      "--encoder-path",
+      "/root/private_data/guoxin-candidates/models/qwen25-omni3b006",
+      "--runtime-dir",
+      "/tmp/a006-7a82802be4f04837a941e862687318f8",
+      "--port",
+      "30139"
+    ],
+    "official_accuracy_verified": false,
+    "official_performance_verified": false
+  },
+  "environment_modified": false
+}

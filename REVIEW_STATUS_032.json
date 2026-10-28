@@ -1,0 +1,10 @@
+{
+  "scope": "Full1200 numeric accuracy and same-profile96 performance, plus fixed100 root reproduction independently verified. External image/SourceFind receipts are recorded separately.",
+  "formal_accuracy_numeric_pass": true,
+  "native_performance_complete": true,
+  "root100_complete": true,
+  "fresh_final_image_Notebook_GPU_replay": false,
+  "cross_account_reviewer_access_verified": false,
+  "official_acceptance": false,
+  "submitted": false
+}

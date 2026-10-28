@@ -1,0 +1,29 @@
+{
+  "UTC": "2026-10-28T04:42:44.596046+00:00",
+  "CPU_complete_public400_reference_hash_and_source327_selfcheck_passed_in_WSL": true,
+  "seven_shell_syntax_checks_passed": true,
+  "root_entry_python_AST_valid": true,
+  "root100_request_bodies_identical_to_retained_full400_run1": true,
+  "bench_plan_matches_completed96": true,
+  "bench_selected_ids": [
+    "00004507-00000024",
+    "00004509-00000047",
+    "00004511-00000014",
+    "00004516-00000111",
+    "00004517-00000108",
+    "00004524-00000118",
+    "00004542-00000047",
+    "00004553-00000017",
+    "00004570-00000072",
+    "00004591-00000083",
+    "00004592-00000078",
+    "00004595-00000033",
+    "00004604-00000054",
+    "00004609-00000038",
+    "00004628-00000065",
+    "00004634-00000021"
+  ],
+  "root100_samples_sha256": "d056bd4a0b0402ec7fa98887af0d303cda1d6cda7548e8017d31e58f6cc01a57",
+  "new_model_requests": 0,
+  "GPU_executed": false
+}

@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-10-28T01:14:03.063991+00:00",
+  "controller_pid": 17403,
+  "state": "failed",
+  "source_sha256": "d09f51267cd0803e0e3dacd01bf99c87fa072f62a06a9385bc6dc80a84a863a9",
+  "dataset_count": 400,
+  "complete_rounds_required": 3,
+  "seeds": [
+    1234,
+    2345,
+    3456
+  ],
+  "full_target_requests": 1200,
+  "data_sha256": "ea61e12ac36e6c1520a7c41ed608ebcbc7471933d47f5964b1e5dde02cc98701",
+  "longest_case_first_before_predictions": true,
+  "max_seconds_profile": 100,
+  "shape_validation_complete": true,
+  "GPU_started": true,
+  "phases": {
+    "launch": 0,
+    "stop": 0
+  },
+  "generation_rows": 1200,
+  "SIM_rows": 0,
+  "numeric_pass": null,
+  "submitted": false,
+  "instance_shutdown_requested": false,
+  "previous_robo_progress_sha256": "4fd87126ef8962f730ee356fd5fefde02532dd980de53790762c9374229d410e",
+  "run_id": "86dba3862971478595e8f1d702e6e51d",
+  "candidate_serve_sha256": "a7464a867538ebc9e9061dcd411874f5900fcb2ca529db973d7bc428f4051fe7",
+  "model_lock_sha256": "56327414733b1e99c2b43e0e7b4438faf844caaf2f71cc87c9743dd3caf38934",
+  "active_sample": {
+    "id": "raokouling-0052",
+    "iteration": 3,
+    "seed": 3456,
+    "request_sha256": "beee71e097e7a1d2c4665781e54982ddbd8982b9790becfeb49ec01323d7a045"
+  },
+  "generation_complete": true,
+  "owned_service_stopped": true,
+  "error": "ImportError('libgalaxyhip.so.5: cannot open shared object file: No such file or directory')",
+  "ended_utc": "2026-10-28T03:42:08.451237+00:00"
+}
