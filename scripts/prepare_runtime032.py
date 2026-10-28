@@ -56,7 +56,31 @@ def fingerprint(metadata):
 def environment_matches(executable, expected):
     state = original.distributions(executable, expected)
     assert state['prefix'] != state['base_prefix'], 'A scoped venv is required'
-    assert fingerprint(state) == expected, 'Existing venv differs from the measured package profile; preserve it'
+    actual = fingerprint(state)
+    changed = {name for name in expected if actual.get(name) != expected[name]}
+    if changed == {'antlr4-python3-runtime'}:
+        # The pinned wheel carries PEP metadata2.1; the measured sdist install
+        # carries metadata2.4. Do not alter either artifact or accept arbitrary
+        # metadata: require the exact observed pair and every runtime code byte.
+        lock = load(ROOT / 'publisher037/antlr4-runtime-package-fingerprint.json')
+        name = lock['package']
+        assert expected[name] == {'version': lock['version'], 'metadata_sha256': lock['original_metadata_sha256']}
+        assert actual[name] == {'version': lock['version'], 'metadata_sha256': lock['compatible_metadata_sha256']}
+        package = Path(state['packages'][name]['root']) / 'antlr4'
+        files = {}
+        for folder, dirs, names in os.walk(package, onerror=lambda error: (_ for _ in ()).throw(error)):
+            dirs[:] = [part for part in dirs if part != '__pycache__']
+            for filename in names:
+                path = Path(folder) / filename
+                assert path.is_file() and not path.is_symlink()
+                files[path.relative_to(package).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
+        assert files == lock['package_files'], 'ANTLR runtime source differs; preserve the environment'
+        state['declared_metadata_only_compatibility037'] = {
+            'package': name, 'version': lock['version'], 'code_files_identical': len(files),
+            'actual_metadata_sha256': actual[name]['metadata_sha256'],
+            'original_metadata_sha256': expected[name]['metadata_sha256']}
+        actual[name] = expected[name]
+    assert actual == expected, 'Existing venv differs from the measured package profile; preserve it'
     return state
 
 
