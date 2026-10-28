@@ -1,5 +1,7 @@
-"""Run only the supplied official AuK evaluator; development WAV is not accuracy."""
-from __future__ import annotations
+"""Run the measured AuK fixed-root verifier through the template entrypoint."""
 import sys
-from entry import main
-if __name__=="__main__":raise SystemExit(main(["verify",*sys.argv[1:]]))
+from entry031 import main
+
+if __name__ == '__main__':
+    sys.argv.insert(1, 'verify')
+    raise SystemExit(main())
