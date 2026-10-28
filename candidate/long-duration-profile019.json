@@ -1,0 +1,15 @@
+{
+  "UTC": "2026-10-27T16:41:47.238240+00:00",
+  "source_candidate": "evidence/session016/auk-full015/candidate",
+  "source_serve_sha256": "e29d5ef1b641070bd249d500a57e7f2ea5a6216fbc0da17dad5705551d7cf5d8",
+  "new_serve_sha256": "a7464a867538ebc9e9061dcd411874f5900fcb2ca529db973d7bc428f4051fe7",
+  "changes": [
+    "Allow explicit AUK_MAX_SECONDS up to100 for all400 hardcase duration estimates; default remains30",
+    "No vendor/model/sampling changes; batch1, NFE32,CFG2,sway-1 retained"
+  ],
+  "longest_input_estimated_seconds": 94.69355555555555,
+  "default30s_would_truncate_cases": 22,
+  "GPU_validated": false,
+  "numeric_pass": null,
+  "submitted": false
+}

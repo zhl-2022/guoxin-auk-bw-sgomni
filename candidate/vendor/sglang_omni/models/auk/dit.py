@@ -581,11 +581,20 @@ class AuKDit(nn.Module):
         The fused kernel's cos and sin are built here, once per step for all of
         the blocks, so that a compiled block reads them as plain tensors.
         """
-        freqs, scale = (
-            self.rotary_embed.forward_from_seq_len(seq_len)
-            if positions is None
-            else self.rotary_embed(positions)
-        )
+        if positions is not None and positions.ndim == 2:
+            # x-transformers 1.31.14 only accepts one position row. Preserve
+            # its exact per-row arithmetic and stack the independent tables.
+            tables = [self.rotary_embed(row) for row in positions.unbind(0)]
+            if not all(isinstance(s, (int, float)) and s == 1.0 for _, s in tables):
+                raise ValueError("Batched AuK rotary compatibility requires non-XPos scaling")
+            freqs = torch.stack([f for f, _ in tables], dim=0)
+            scale = 1.0
+        else:
+            freqs, scale = (
+                self.rotary_embed.forward_from_seq_len(seq_len)
+                if positions is None
+                else self.rotary_embed(positions)
+            )
         if self.qk_fusion is None:
             return Rope(freqs, scale)
         else:

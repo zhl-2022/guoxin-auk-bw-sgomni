@@ -32,12 +32,12 @@ def claim_runtime_directory(path):
     path.mkdir(mode=0o700, exist_ok=False)
     return path
 
-def configuration(model_path, encoder_path, runtime_dir, seconds=3):
+def configuration(model_path, encoder_path, runtime_dir, seconds=30):
     runtime_dir = checked_runtime_directory(str(runtime_dir).replace("\\", "/"))
     from sglang_omni.config import CommConfig, EndpointsConfig, FactoryArgs
     from sglang_omni.models.auk.config import AuKPipelineConfig
     from sglang_omni.platforms import current_platform
-    if not 0 < seconds <= 3: raise ValueError("First pilot output must be <=3 seconds")
+    if not 0 < seconds <= 100: raise ValueError("AuK output cap must be in (0,100] seconds")
     config = AuKPipelineConfig(model_path=str(Path(model_path).resolve()), name="tencent-auk-bw-port006")
     for stage in config.stages:
         values = stage.factory.model_dump(exclude_none=True)
@@ -49,7 +49,7 @@ def configuration(model_path, encoder_path, runtime_dir, seconds=3):
             values.update(text_encoder_path=str(Path(encoder_path).resolve()), dtype="bfloat16")
         if stage.name == "auk_engine":
             values.update(nfe=32, cfg_strength=2.0, sway_sampling_coef=-1.0, max_seconds=seconds,
-                          dtype="bfloat16", weight_dtype="bfloat16", enable_dit_torch_compile=False,
+                          dtype="bfloat16", weight_dtype="float32", enable_dit_torch_compile=False,
                           enable_dit_cuda_graph=False, enable_dit_fused_qk_norm_rope=False)
         stage.factory = FactoryArgs(**values)
         stage.comm = CommConfig(slot_size_mb=16, credits=2)
@@ -78,7 +78,8 @@ def main():
     args=ap.parse_args()
     if not 1024 <= args.port <= 65535:raise ValueError("Invalid loopback port")
     runtime=checked_runtime_directory(args.runtime_dir)
-    config=configuration(args.model_path,args.encoder_path,runtime)
+    seconds=float(os.environ.get('AUK_MAX_SECONDS','30'))
+    config=configuration(args.model_path,args.encoder_path,runtime,seconds=seconds)
     document={"scope":"SG-Omni AuK-only native Torch compatibility fork; no SRT model engines", "profile":config.model_dump(),
               "framework_revision":"f615735fd2a4d42daf80f2b81bd8eea4cf5a9b88","GPU_verified":False}
     if args.resolve:

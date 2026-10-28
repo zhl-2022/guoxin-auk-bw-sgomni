@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-10-28T04:29:14.080349+00:00",
+  "purpose": "Future fixed-root reproduction of the already completed full3x400 accuracy; this subset is not a substitute for the preserved full1200 result.",
+  "original_count": 400,
+  "actual_count": 100,
+  "fraction": 0.25,
+  "seed": "guoxin-auk-root030-quarter-v1",
+  "selection": "Sort all400 by declared estimated_output_seconds andID; split four equal100 length strata; choose25 in each by SHA256(seed|ID). Include the longest published item by replacing the last chosen item of the longest stratum if necessary. No result-dependent selection.",
+  "selection_uses_accuracy_outcomes": false,
+  "sample_list": "evidence/session030/auk-root-quarter100-frozen-samples.jsonl",
+  "sample_list_sha256": "d056bd4a0b0402ec7fa98887af0d303cda1d6cda7548e8017d31e58f6cc01a57",
+  "source_dataset_sha256": "ea61e12ac36e6c1520a7c41ed608ebcbc7471933d47f5964b1e5dde02cc98701",
+  "AuK_fresh_root_requests_executed": 0,
+  "plan_only": true,
+  "reason": "Full400x3 accuracy already completed and independently audited. Reduce the additional fixed-root reproduction workload to100 to shorten time while covering all four duration strata and the longest item.",
+  "full1200_accuracy_evidence": "evidence/session030/auk-full1200-independent-audit.json",
+  "full96_performance_evidence": "evidence/session030/auk-performance96-independent-audit.json",
+  "accuracy_claim": "Use the preserved full3x400 aggregate for formal comparison; report new100 results separately as root-reproduction subset."
+}

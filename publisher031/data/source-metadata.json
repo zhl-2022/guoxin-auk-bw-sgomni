@@ -1,0 +1,22 @@
+{
+  "repository": "zhaochenyang20/seed-tts-eval-arrow",
+  "revision": "81d1901582dee1293a537a6d945d084301712c41",
+  "file": {
+    "type": "file",
+    "oid": "424a557d2b773ad4d12fd579c4f03b501f4a5672",
+    "size": 454302299,
+    "lfs": {
+      "oid": "5d73be79cf2e84fd0bebf5d47212438a88dd264a591031d092164ba84545f1de",
+      "size": 454302299,
+      "pointerSize": 134
+    },
+    "xetHash": "4b030b2979a78246866e03858514dcf41b35cd57fce77c7dd7bccb4aec976803",
+    "path": "data/zh-00000-of-00001.parquet"
+  },
+  "hardcase_rows": 400,
+  "hardcase_sha256": "ebae4e77fb558f3e0e2123c33a6420301438138e65fe4b271677527cbdbec07e",
+  "baseline_CER_percent": 5.91,
+  "baseline_SIM": 0.782,
+  "selection_before_any_predictions": true,
+  "earlier_en_fail_retained": true
+}

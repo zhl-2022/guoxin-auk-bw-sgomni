@@ -50,7 +50,7 @@ def ipc_runtime_path(run_id):
 def configuration(run_id):
     ipc_runtime = ipc_runtime_path(run_id)
     runtime=int(os.environ.get("AUK_MAX_RUNTIME_SECONDS","1800"));load=int(os.environ.get("AUK_LOAD_TIMEOUT","900"))
-    if not 60<=load<=runtime<=3600:raise ValueError("AuK service bounds must satisfy 60<=load<=runtime<=3600")
+    if not 60<=load<=runtime<=10800:raise ValueError("AuK service bounds must satisfy 60<=load<=runtime<=10800")
     port=int(os.environ.get("AUK_PORT","30139"))
     if not 1024<=port<=65535:raise ValueError("Invalid AuK port")
     command=[sys.executable,"-B",str(ROOT/"serve.py"),"--model-path",str(MODEL),"--encoder-path",str(ENCODER),

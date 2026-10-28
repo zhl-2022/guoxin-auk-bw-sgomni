@@ -10,8 +10,8 @@ export CARD="BW"
 export TP=1 EP=1 PP=1
 export AUK_PORT="${AUK_PORT:-30139}"
 export PORT="$AUK_PORT"
-export AUK_LOAD_TIMEOUT="${AUK_LOAD_TIMEOUT:-900}"
-export AUK_MAX_RUNTIME_SECONDS="${AUK_MAX_RUNTIME_SECONDS:-1800}"
+export AUK_LOAD_TIMEOUT="${AUK_LOAD_TIMEOUT:-1200}"
+export AUK_MAX_RUNTIME_SECONDS="${AUK_MAX_RUNTIME_SECONDS:-10800}"
 export PYTHON_BIN="${AUK_PYTHON_BIN:-$AUK_TASK_DIR/runtime/native-venv/bin/python}"
 export IMAGE="${AUK_IMAGE:-}"
 export IMAGE_CANDIDATE_NAME="${AUK_IMAGE_CANDIDATE_NAME:-jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423}"
@@ -28,3 +28,9 @@ unset OFFICIAL_VERIFY_OUTPUTS_JSON OFFICIAL_BENCH_OUTPUTS_JSON BENCH_MODE IMAGE_
 if [[ -v AUK_OFFICIAL_VERIFY_OUTPUTS_JSON ]]; then export OFFICIAL_VERIFY_OUTPUTS_JSON="$AUK_OFFICIAL_VERIFY_OUTPUTS_JSON"; fi
 if [[ -v AUK_OFFICIAL_BENCH_OUTPUTS_JSON ]]; then export OFFICIAL_BENCH_OUTPUTS_JSON="$AUK_OFFICIAL_BENCH_OUTPUTS_JSON"; fi
 if [[ -x "$PYTHON_BIN" ]]; then export PATH="$(dirname -- "$PYTHON_BIN"):$PATH"; fi
+
+# Fixed long-duration profile used by all complete1200 accuracy and96 performance.
+export AUK_MAX_SECONDS=100
+export ROCM_PATH=/opt/dtk HIP_PATH=/opt/dtk/hip
+export PATH="/opt/ucx/bin:/opt/dtk/bin:/opt/dtk/llvm/bin:/opt/dtk/hip/bin:/opt/hyhal/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/ucx/lib:/opt/dtk/dcc/gcvm/lib:/opt/dtk/hip/lib:/opt/dtk/llvm/lib:/opt/dtk/lib:/opt/dtk/lib64:/opt/hyhal/lib:/opt/hyhal/lib64:/opt/dtk/dushmem/lib:/opt/dtk/opencl/lib:/opt/mpi/lib:/opt/hwloc/lib:${LD_LIBRARY_PATH:-}"
