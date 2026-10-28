@@ -1,0 +1,541 @@
+{
+  "started_utc": "2026-10-28T16:19:13.503808+00:00",
+  "source_commit": "7c2716700562acc9479f65e3230d43a95a6aac32",
+  "run_id": "7c1304068e4de0ce6a2f1011548531a8",
+  "purpose": "Fresh fixed-path venv bootstrap and one functional smoke; not new accuracy/performance",
+  "steps": [
+    {
+      "label": "sealed-source-arrays",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "verify_bundle.py",
+        "--arrays"
+      ],
+      "started_utc": "2026-10-28T16:19:13.510882+00:00",
+      "timeout_seconds": 180,
+      "exit_code": 0,
+      "log_sha256": "d4f6a8f6d4db371801fcc4d343f2c294335e41ca66f624b7a8981ebd3aa308f6",
+      "ended_utc": "2026-10-28T16:19:18.293405+00:00"
+    },
+    {
+      "label": "fresh-bootstrap",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "scripts/prepare_runtime032.py",
+        "ensure"
+      ],
+      "started_utc": "2026-10-28T16:19:18.318638+00:00",
+      "timeout_seconds": 1800,
+      "exit_code": 0,
+      "log_sha256": "f1b5e9f9c84b07a36c3698e15496d9f6c924219229afd2e166bdcabd8556dfac",
+      "ended_utc": "2026-10-28T16:21:38.445562+00:00"
+    },
+    {
+      "label": "selfcheck",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "verify.py",
+        "--selfcheck"
+      ],
+      "started_utc": "2026-10-28T16:21:38.669829+00:00",
+      "timeout_seconds": 180,
+      "exit_code": 2,
+      "log_sha256": "2bc8a396ce1ef9f5545c2751ba784e5a86207df3d50328527f09cefffafb2ae3",
+      "ended_utc": "2026-10-28T16:21:49.361002+00:00"
+    }
+  ],
+  "B_accessed": false,
+  "complete": false,
+  "model_download_branch_rerun": false,
+  "original_venv_preserved": "/root/private_data/guoxin-auk-port006/venv002-preserved-before037",
+  "failed_venv_preserved": "/root/private_data/guoxin-auk-port006/venv002-failed-before-compat037",
+  "failed_preparation_claim_preserved": "/root/private_data/guoxin-auk-port006/.venv002-preparation032-failed037.lock",
+  "fresh_prefix_was_absent": true,
+  "preparation": {
+    "scope": "Pinned model data reuse/download and dedicated venv only",
+    "files": 20,
+    "models": [
+      {
+        "namespace": "auk006",
+        "path": "LICENSE",
+        "size": 1653,
+        "sha256": "40eebc5270decd68865db9efad73c7fa86e1ab2ebe815195bf3c5903375ad2a1",
+        "download_url": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/9d42bded40cd96a52ae4c0436d31dd86a317df86/LICENSE",
+        "original_model": "tencent/AuK",
+        "original_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+        "modelscope_model": "Tencent-Hunyuan/AuK",
+        "modelscope_revision": "9d42bded40cd96a52ae4c0436d31dd86a317df86",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "auk006",
+        "path": "auk_base.safetensors",
+        "size": 6122209092,
+        "sha256": "29c65c0c6045e8d8fb454019f99c9680508f553fc98fa143feaca3711d0b8614",
+        "download_url": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/f42b2080b21eb5440c64e5ab77c335760bd1197a/auk_base.safetensors",
+        "original_model": "tencent/AuK",
+        "original_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+        "modelscope_model": "Tencent-Hunyuan/AuK",
+        "modelscope_revision": "f42b2080b21eb5440c64e5ab77c335760bd1197a",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "auk006",
+        "path": "config.yaml",
+        "size": 1310,
+        "sha256": "04d5cbae386342c5d031bcf53be594b167ec488ae82434e1d1d43fea7315a77b",
+        "download_url": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/5ff61c12d026b5fcfc1e335581fed406e1fc2bb4/config.yaml",
+        "original_model": "tencent/AuK",
+        "original_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+        "modelscope_model": "Tencent-Hunyuan/AuK",
+        "modelscope_revision": "5ff61c12d026b5fcfc1e335581fed406e1fc2bb4",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "auk006",
+        "path": "vae.safetensors",
+        "size": 637322604,
+        "sha256": "0f5857fd0d6b916d161c73fef433e0ccb42484a2dad3aa08e8a51975e29a0645",
+        "download_url": "https://modelscope.cn/models/Tencent-Hunyuan/AuK/resolve/d394f32f45114efde787900d4c7b85b82fd6f683/vae.safetensors",
+        "original_model": "tencent/AuK",
+        "original_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+        "modelscope_model": "Tencent-Hunyuan/AuK",
+        "modelscope_revision": "d394f32f45114efde787900d4c7b85b82fd6f683",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "LICENSE",
+        "size": 7387,
+        "sha256": "ae8ef9d3fb476f735d9b9abeaab73b7f778b121c77427cd918ec3da01eefbc44",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/LICENSE",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "added_tokens.json",
+        "size": 579,
+        "sha256": "e81a2cc3bd867a1217019eed202d1d8a07e1063ece716f22060dda14f6cc07d8",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/added_tokens.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "chat_template.json",
+        "size": 1313,
+        "sha256": "1933f7ca08e6503460e981d9037ddc0b851196abfa3aceea52d6ee0c0fdfd9f0",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/chat_template.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "config.json",
+        "size": 13183,
+        "sha256": "20790f362c37a1718a3e764f597ae33dfc20177399762018dffaabf8321d4dd1",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/config.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "generation_config.json",
+        "size": 74,
+        "sha256": "b9acf52072249e0e1850541d51ca4c85a30b9d7e23c2f2093ec0fb4139059ac7",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/generation_config.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "merges.txt",
+        "size": 1671853,
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/merges.txt",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "model-00001-of-00003.safetensors",
+        "size": 4994850880,
+        "sha256": "349972cebff443030e9e96e1e930d7230979c6961cf046fa29fc580e4bcf49a6",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/model-00001-of-00003.safetensors",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f0fe4326288865534ad09d70aa435ff7d1611541",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "model-00002-of-00003.safetensors",
+        "size": 4999787448,
+        "sha256": "b29a76dfefb3aa33a5bd0faa19c681d039a44de57223653ea0e933df728c6d8c",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/model-00002-of-00003.safetensors",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f0fe4326288865534ad09d70aa435ff7d1611541",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "model-00003-of-00003.safetensors",
+        "size": 1978024880,
+        "sha256": "8f2138170a87ec604b53232491a96d6dcf19e0724aca37e69aace143e508b170",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/model-00003-of-00003.safetensors",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f0fe4326288865534ad09d70aa435ff7d1611541",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "model.safetensors.index.json",
+        "size": 241817,
+        "sha256": "5b7629198e2ef80e37612a491d9bfd71639d2f212632d36d8ab086922e74e129",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/model.safetensors.index.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "preprocessor_config.json",
+        "size": 667,
+        "sha256": "b47055ce61463ce143e9aab741d55c0aa520801a0a5d63be73c5b17cecb6bc69",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/preprocessor_config.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "special_tokens_map.json",
+        "size": 832,
+        "sha256": "dc241604d085780a33f760f69c47e6622451104c20eee3cd3a12b6e884b43f44",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/special_tokens_map.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "spk_dict.pt",
+        "size": 259544,
+        "sha256": "6a05609b28f5d42b7b748f0f07592545c8f1f6885b9ae8fff64baf56e86b2a18",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f0fe4326288865534ad09d70aa435ff7d1611541/spk_dict.pt",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f0fe4326288865534ad09d70aa435ff7d1611541",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "tokenizer.json",
+        "size": 11421870,
+        "sha256": "8441917e39ae0244e06d704b95b3124795cec478e297f9afac39ba670d7e9d99",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/tokenizer.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "HF publisher LFS size/SHA equals immutable ModelScope file metadata; full download still to verify"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "tokenizer_config.json",
+        "size": 6469,
+        "sha256": "569aa7a9171e36dfff80f0a7550ab0c9c09e46ac840fea5030641417394fb0d2",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/tokenizer_config.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      },
+      {
+        "namespace": "qwen25-omni3b006",
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "download_url": "https://modelscope.cn/models/Qwen/Qwen2.5-Omni-3B/resolve/f61daeb0493a6e98cec1a58ddeec8f13c1121cc0/vocab.json",
+        "original_model": "Qwen/Qwen2.5-Omni-3B",
+        "original_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+        "modelscope_model": "Qwen/Qwen2.5-Omni-3B",
+        "modelscope_revision": "f61daeb0493a6e98cec1a58ddeec8f13c1121cc0",
+        "identity_proof": "Actual small-file bytes match fixed HF Git blob and ModelScope SHA256"
+      }
+    ],
+    "model_bytes": 18748600288,
+    "venv": "/root/private_data/guoxin-auk-port006/venv002",
+    "python": "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+    "expected_packages": {
+      "antlr4-python3-runtime": {
+        "version": "4.9.3",
+        "metadata_sha256": "bf325e5155318385a2fcc4680742da710bbadf13a3d1c0979a98b3487980f261"
+      },
+      "audioread": {
+        "version": "3.0.1",
+        "metadata_sha256": "3c5a7b0c8225a12684774f2df639638a5f4b14e460a326eb487d22143c91267b"
+      },
+      "av": {
+        "version": "14.2.0",
+        "metadata_sha256": "e6fc0587e5afa2e459b4be3b65a4e1f0ba8a490b3898126c9ebc2eae398b448b"
+      },
+      "lazy-loader": {
+        "version": "0.4",
+        "metadata_sha256": "c022b48b5a90cbd853aa926dfa84bf24f4e6a6e0f5646ab0fc617c5639f0bbed"
+      },
+      "librosa": {
+        "version": "0.11.0",
+        "metadata_sha256": "5aaba06be0f28ca1ca776f8884fc0945f752a38d7ddca249403644d6f685c6d3"
+      },
+      "numpy": {
+        "version": "1.25.0",
+        "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+      },
+      "omegaconf": {
+        "version": "2.3.0",
+        "metadata_sha256": "ab2dcbf0e3e70cc75dca1d894f8953e7de8b651dc2dc28f08f350bfa5787badb"
+      },
+      "pooch": {
+        "version": "1.8.2",
+        "metadata_sha256": "e8a9ec61c85c7f0a703a12d3c26f72411ed1a356e63bef5f23f3a9dca8e05226"
+      },
+      "pydantic": {
+        "version": "2.12.5",
+        "metadata_sha256": "a3ba23e895191fed69b8323cbcbcdc82984ca0b6a3cdc62c48a2341886a9c08d"
+      },
+      "safetensors": {
+        "version": "0.7.0",
+        "metadata_sha256": "6809326fbf17444dd520ab19f0a55b7a18476dbe52a430466bbf5389967c2aaa"
+      },
+      "scikit-learn": {
+        "version": "1.6.1",
+        "metadata_sha256": "2fcfa92b3af08245a5abeb3e24c83c023f3c8cb98c384f567b73bdaa344de23f"
+      },
+      "soundfile": {
+        "version": "0.13.1",
+        "metadata_sha256": "0e4254c32f48852e0789e265aee10208a9bb778113ae8c5420d680393b7d32a1"
+      },
+      "soxr": {
+        "version": "0.5.0.post1",
+        "metadata_sha256": "777202f28af32a0ae3be3e2c005f3738e2c2b8c87d4a9206cfc4afa54402e100"
+      },
+      "threadpoolctl": {
+        "version": "3.6.0",
+        "metadata_sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341"
+      },
+      "tokenizers": {
+        "version": "0.22.2",
+        "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc"
+      },
+      "torch": {
+        "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+        "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+      },
+      "torchvision": {
+        "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+        "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+      },
+      "transformers": {
+        "version": "5.5.0",
+        "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+      },
+      "triton": {
+        "version": "3.6.0+gitc73250c4.staging",
+        "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+      },
+      "vllm": {
+        "version": "0.18.1+das.fa71803.dtk2604",
+        "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+      },
+      "vllm-hcu": {
+        "version": "0.18.1+das.dtk2604",
+        "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+      },
+      "x-transformers": {
+        "version": "1.31.14",
+        "metadata_sha256": "423e72471841985f3b1ed61e5ae1538a261565ff9e0dd5da6e15bf3f931c43bc"
+      }
+    },
+    "GPU_imported": false,
+    "GPU_started": false,
+    "native_package_install": false,
+    "model_downloads_executed": false,
+    "new_venv_created": true,
+    "all20_model_files_verified": true,
+    "existing_model_files_reused": 20,
+    "venv_metadata": {
+      "prefix": "/root/private_data/guoxin-auk-port006/venv002",
+      "base_prefix": "/usr",
+      "packages": {
+        "antlr4-python3-runtime": {
+          "version": "4.9.3",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "74186f39ce0f9acd7b01e4f0638fe687f1632732f712c00c9315b2c71881b58a"
+        },
+        "audioread": {
+          "version": "3.0.1",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "3c5a7b0c8225a12684774f2df639638a5f4b14e460a326eb487d22143c91267b"
+        },
+        "av": {
+          "version": "14.2.0",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "e6fc0587e5afa2e459b4be3b65a4e1f0ba8a490b3898126c9ebc2eae398b448b"
+        },
+        "lazy-loader": {
+          "version": "0.4",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "c022b48b5a90cbd853aa926dfa84bf24f4e6a6e0f5646ab0fc617c5639f0bbed"
+        },
+        "librosa": {
+          "version": "0.11.0",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "5aaba06be0f28ca1ca776f8884fc0945f752a38d7ddca249403644d6f685c6d3"
+        },
+        "numpy": {
+          "version": "1.25.0",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+        },
+        "omegaconf": {
+          "version": "2.3.0",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "ab2dcbf0e3e70cc75dca1d894f8953e7de8b651dc2dc28f08f350bfa5787badb"
+        },
+        "pooch": {
+          "version": "1.8.2",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "e8a9ec61c85c7f0a703a12d3c26f72411ed1a356e63bef5f23f3a9dca8e05226"
+        },
+        "pydantic": {
+          "version": "2.12.5",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "a3ba23e895191fed69b8323cbcbcdc82984ca0b6a3cdc62c48a2341886a9c08d"
+        },
+        "safetensors": {
+          "version": "0.7.0",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "6809326fbf17444dd520ab19f0a55b7a18476dbe52a430466bbf5389967c2aaa"
+        },
+        "scikit-learn": {
+          "version": "1.6.1",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "2fcfa92b3af08245a5abeb3e24c83c023f3c8cb98c384f567b73bdaa344de23f"
+        },
+        "soundfile": {
+          "version": "0.13.1",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "0e4254c32f48852e0789e265aee10208a9bb778113ae8c5420d680393b7d32a1"
+        },
+        "soxr": {
+          "version": "0.5.0.post1",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "777202f28af32a0ae3be3e2c005f3738e2c2b8c87d4a9206cfc4afa54402e100"
+        },
+        "threadpoolctl": {
+          "version": "3.6.0",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341"
+        },
+        "tokenizers": {
+          "version": "0.22.2",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc"
+        },
+        "torch": {
+          "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+        },
+        "torchvision": {
+          "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+        },
+        "transformers": {
+          "version": "5.5.0",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+        },
+        "triton": {
+          "version": "3.6.0+gitc73250c4.staging",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+        },
+        "vllm": {
+          "version": "0.18.1+das.fa71803.dtk2604",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+        },
+        "vllm-hcu": {
+          "version": "0.18.1+das.dtk2604",
+          "root": "/usr/local/lib/python3.10/dist-packages",
+          "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+        },
+        "x-transformers": {
+          "version": "1.31.14",
+          "root": "/root/private_data/guoxin-auk-port006/venv002/lib/python3.10/site-packages",
+          "metadata_sha256": "423e72471841985f3b1ed61e5ae1538a261565ff9e0dd5da6e15bf3f931c43bc"
+        }
+      },
+      "declared_metadata_only_compatibility037": {
+        "package": "antlr4-python3-runtime",
+        "version": "4.9.3",
+        "code_files_identical": 56,
+        "actual_metadata_sha256": "74186f39ce0f9acd7b01e4f0638fe687f1632732f712c00c9315b2c71881b58a",
+        "original_metadata_sha256": "bf325e5155318385a2fcc4680742da710bbadf13a3d1c0979a98b3487980f261"
+      }
+    },
+    "protected_native_metadata_unchanged": true,
+    "preparation_complete": true
+  },
+  "fresh_bootstrap_passed": true,
+  "failure": "AssertionError(('selfcheck', 2))",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/private_data/guoxin-session037/run_auk_bootstrap_repair037.py\", line 140, in main\n    execute('selfcheck', ['/usr/bin/python3', '-B', 'verify.py', '--selfcheck'], 180)\n  File \"/root/private_data/guoxin-session037/run_auk_bootstrap_repair037.py\", line 104, in execute\n    assert result.returncode == 0, (label, result.returncode)\nAssertionError: ('selfcheck', 2)\n",
+  "ended_utc": "2026-10-28T16:21:49.814149+00:00",
+  "final_ports": {
+    "30000": false,
+    "30001": false,
+    "30002": false,
+    "30109": false,
+    "30119": false,
+    "30129": false,
+    "30139": false
+  }
+}

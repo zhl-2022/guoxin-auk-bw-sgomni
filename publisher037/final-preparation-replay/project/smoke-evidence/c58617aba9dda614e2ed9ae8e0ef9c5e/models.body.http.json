@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:30139/v1/models",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "date": "Wed, 28 Oct 2026 16:38:41 GMT",
+    "server": "uvicorn",
+    "content-length": "286",
+    "content-type": "application/json",
+    "connection": "close"
+  },
+  "body_bytes": 286,
+  "body_sha256": "95739e238cd97ce0e0c82eaffd84a32b44cb06b0a160ee17d47ef681223f88ba",
+  "wall_seconds": 0.0056560589000582695
+}

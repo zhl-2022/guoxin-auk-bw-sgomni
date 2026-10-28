@@ -1,0 +1,15 @@
+{
+  "selfcheck_complete": true,
+  "source": {
+    "candidate004_zip_sha256": "f087c025de08e7f764118d44f187ff7de78e9ca265539a89d353b18b95c0bdfb",
+    "files_verified": 327
+  },
+  "public_split": 400,
+  "root_replay_subset_count": 100,
+  "sample_list_sha256": "d056bd4a0b0402ec7fa98887af0d303cda1d6cda7548e8017d31e58f6cc01a57",
+  "full_accuracy_preserved": true,
+  "full_CER_percent_three_run_mean": 5.957622968852493,
+  "full_SIM_three_run_mean": 0.780468952814738,
+  "fresh_root_model_requests_executed": 0,
+  "GPU_executed": false
+}

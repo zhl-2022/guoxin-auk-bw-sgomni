@@ -1,0 +1,2 @@
+Stopped the matching task supervisor and its server process group.
+{"action": "stop", "run_id": "068cf7b21ace7065c5b640a2bfa869ad", "exit_code": 0, "official_accuracy_verified": false}

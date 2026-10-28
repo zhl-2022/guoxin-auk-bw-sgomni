@@ -1,0 +1,1 @@
+{"model":"tencent-auk-bw-port006","input":"Welcome home.","instructions":"A clear, natural voice.","stage_params":{"auk_engine":{"gen_seconds":3}},"seed":1234,"response_format":"wav"}

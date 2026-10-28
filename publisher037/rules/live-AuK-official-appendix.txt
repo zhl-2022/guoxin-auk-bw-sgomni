@@ -1,0 +1,159 @@
+Browser tab: 11, Title: "‍‬​‍⁤‌⁡​‌⁡⁢​‌⁡‌⁡​⁣‌​‍﻿​﻿﻿​‌⁣﻿⁢‌‌﻿‌⁣​​⁡​‌﻿﻿﻿⁤‌​⁢⁢‬​超算互联网 × 光合开发者社区\"国芯国模\"黑客松 赛事详情 - 飞书云文档", URL: "https://bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif".
+0 AXWebArea ‍‬​‍⁤‌⁡​‌⁡⁢​‌⁡‌⁡​⁣‌​‍﻿​﻿﻿​‌⁣﻿⁢‌‌﻿‌⁣​​⁡​‌﻿﻿﻿⁤‌​⁢⁢‬​超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情 - 飞书云文档, URL: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif
+	1 container zh-CN
+		2 container mainContainer
+			3 container
+				4 container
+					5 button
+						6 image
+					7 button
+						8 image
+					9 heading 飞书云文档, Value: 1
+						10 text 飞书云文档
+					11 container
+						12 text 马
+						13 text 马雅兰的云文档
+						14 container
+							15 image
+							16 text 搜索
+						17 container
+							18 button 与我分享
+								19 text 与我分享
+								20 image
+							21 content list SHARE_WITH_ME_ROOT
+								22 container
+									23 button 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情
+				24 container
+					25 button
+						26 image
+					27 container
+						28 text 曙光智算应用发展部
+						29 image
+						30 text 马雅兰
+						31 image
+						32 text 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情
+						33 button
+							34 image
+						35 text 最近修改:  8 小时前
+						36 button 分享, ID: suite-share-btn
+							37 text 分享
+						38 button
+							39 image
+						40 button
+							41 image
+						42 button
+							43 image
+						44 container
+							45 image
+							46 text 问问豆包
+				47 container docx
+					48 container
+						49 container
+						50 container
+							51 content list
+								72 link Description: 分题材料（评测 / 基线）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b
+								73 link Description: 脚本各自的作用, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#B9IrdjQ1oo5iZ8xN7kicV3NYnLc
+								74 link Description: 附录、模型介绍与部署信息, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#QhPmdWiZYoVMG6xgsjzcSLXvnsd
+								75 link Description: T01 moonshotai/Kimi-Linear-48B-A3B-Instruct 48B / A3B · BF16 · 98 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#Ob5QdhnizocY8qxxfEbcsgcmnpe
+								76 link Description: T01 XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B 9.4B · BF16 · 19 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#LVkkdazvbofhs5xLIGrcKWwSnsg
+								77 link Description: T02 deepseek-ai/DeepSeek-V4.1-Flash-1017, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#A7DpdIqP4ojZXNxlBZuc8Dzjndf
+								78 link Description: T02 moonshotai/Kimi-VL-A3B-Instruct 16B / A3B · BF16 · 33 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#ISRDd0Ts7oWtOmxOCtVcEEYLnLe
+								79 link Description: T02 OpenBMB/MiniCPM-V-4.7-35B-A3B 35B / A3B · BF16 · 70 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UFLcdpr2jo0Gsxx6RYRc9171nWe
+								80 link Description: T02 BAAI/RoboBrain2.5-8B-NV 8.8B · Qwen3-VL 架构 · BF16 · 17.5 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#VXeudPyUnoYoHgxER47c5apCnUf
+								81 link Description: T02 BAAI/MobileVLA-R1 VLA · zip 分卷 26.9 GB · 精度未标注, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#NR2WdBJseo302qxYEV9cPFcJnMc
+								82 link Description: T02 BAAI/Recon2Reason-Reasoning-4B 4.4B · BF16 · 8.9 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#U2YzdrYgQocmTCxEOX9cfnNGnMb
+								83 link Description: T02 OpenBMB/Trident-Qwen3VL-2B 2.1B · 嵌入模型 · BF16 · 4.3 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#V62ddOEtookctHxuJ6XczlGsnih
+								84 link Description: T02 deepseek-ai/DeepSeek-V4-Flash-Vision-Exp 305B MoE · 官方 FP8/FP4 · BF16 约 609 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UCspdSmyzoNQLAxPl0Dc7g0Xnab
+								85 link Description: T03 Qwen/Qwen-Image-2.1-Turbo 文生图 / 编辑 · 16.2B · BF16 · 32 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#AkqHdETkLo58PmxStMLckdm8nzb
+								169 link Description: T03 Tencent-Hunyuan/HY-OmniWeaving 统一视频生成 · 18.0B · BF16 约 36 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#PeRndDKWIoZUuhx3BYlcTh0gnFd
+								170 link Description: T03 Wan-AI/Wan2.1-I2V-14B-480P 图生视频 · 22.8B · BF16 约 46 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#KHuGdvudyoCjzRx54Z7cMuNdn8c
+								171 link Description: T03 MiniMax/MiniMax-Music3 音乐生成 · 21.0B · BF16 约 52 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#CytPdGZnto85F1xTZ9mcdL3XnEh
+								172 link Description: T03 Tencent-Hunyuan/HY-World-2.0 3D 世界模型 · 84.7B · BF16 约 169 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#WBS6dOt2NovsLJxW9wKcvIt0nDf
+								173 link Description: T04 Tencent-Hunyuan/AuK 1.5B · 语音生成 / 编辑 · BF16 约 3.4 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#MKWDdWR7pocKn5x7CbQcIIdlnEi
+								174 link Description: T04Qwen/Qwen3-ASR-1.7B 语音识别 · 1.7B · BF16 · 4.7 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HjJYdlN3JoZM69xMAVzcAdb1nWd
+								175 link Description: T04 Qwen/Qwen3-ForcedAligner-0.6B 强制对齐 · 0.6B · BF16 · 1.8 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#VQKKdhIbiopgNmxBAExcp9mkn0e
+								176 link Description: 其他规则, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#X4WLdyKkfoAmkZxgthZcsZpsnWd
+						86 container
+							87 container
+								88 container
+									89 heading 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情​, Value: 1
+										90 container
+											91 text 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情
+									92 text 今天修改
+									120 container
+										121 container
+											122 image
+											123 text 国芯国模黑客松-技术报告模板.md
+											124 text 14.09KB
+									177 container
+										178 text 介绍： 腾讯混元多模态世界模型框架，提供「世界生成」与「世界重建」两项能力：输入文本、单图、多视角图或视频，输出可编辑的 3D 世界（网格 / 3D 高斯泼溅），可直接导入 Blender / UE / Unity / Isaac。世界生成分四阶段：HY-Pano 2.0 全景生成（约 80B）→ WorldNav 轨迹规划 → WorldStereo 2.0 世界扩展（约 17B）→ WorldMirror 2.0（约 1.2B）+ 3DGS 组合；世界重建由 WorldMirror 2.0 单次前向同时预测深度、法线、相机参数、点云与 3DGS 属性。
+									179 container
+										180 text 规格： 任务标签 image-to-3D；仓库含  HY-Pano-2.0  与  HY-WorldMirror-2.0  两个子目录，共 84.7B 参数（HY-Pano-2.0 83.4B、WorldMirror-2.0 1.26B；BF16 82.2B + FP32 2.5B），仓库约 174.7 GB，按 BF16 计约 169 GB；腾讯混元自有许可（ License.txt ）。
+									181 container
+										182 text 部署： 推荐 CUDA 12.8 + Python 3.11+（conda 环境  hyworld2 ）； pip install -r requirements.txt ，安装仓库自带的 gsplat 变体（或官方 gsplat），FlashAttention-3（Hopper）/ FlashAttention-2 二选一；世界生成另需  requirements_git.txt 、recastnavigation 子模块与 navmesh 扩展。WorldMirror 2.0 命令行：
+									183 container
+										184 text python -m hyworld2.worldrecon.pipeline --input_path path/to/images # 多卡（输入图片数须 ≥ GPU 数） torchrun --nproc_per_node=2 -m hyworld2.worldrecon.pipeline \     --input_path path/to/images --use_fsdp --enable_bf16
+									185 container
+										186 container
+											187 text T04  Tencent-Hunyuan/AuK  1.5B · 语音生成 / 编辑 · BF16 约 3.4 GB
+									188 container
+										189 text 介绍： 腾讯混元开源的 1.5B 语音生成与编辑基础模型，基于数百万小时音频训练，通过统一的自然语言指令接口支持：零样本 TTS、指令 TTS（仅凭音色描述）、语音内容编辑与歌词编辑、音高 / 语速 / 音量编辑、情感 / 音色 / 去口音 / 非语言声音 / 耳语转换，以及语音增强、语音 / 音乐分离与目标说话人提取。AuK 为高质量 Base 版。
+									190 container
+										191 text 规格： checkpoint 为扩散 Transformer + 层融合权重（ auk_base.safetensors ），另有  vae.safetensors  与  config.yaml ，共 1.69B 参数，以 FP32 存储约 6.8 GB，按 BF16 计约 3.4 GB；MLLM 编码器需另下载 
+										192 link Description: Qwen/Qwen2.5-Omni-3B, Value: modelscope.cn/models/Qwen/Qwen2.5-Omni-3B
+										193 text （加载时缺少  text_encoder.*  属正常）；MIT。
+									194 container
+										195 text 部署： 以下来自 GitHub Tencent-Hunyuan/AuK。Python 3.10（uv 或 conda）， pip install -e . （可选  [gradio]  /  [comfyui]  /  [train] ）；默认安装会带 PyTorch / TorchAudio / TorchVision，特定平台需先装匹配的 PyTorch。
+									196 container
+										197 text 下载  Tencent-Hunyuan/AuK  到  ./ckpts/AuK 下载  Qwen/Qwen2.5-Omni-3B  到  ./ckpts/Qwen2.5-Omni-3B # 零样本 TTS：目标文本写进 instruction，--gen_seconds 指定时长 auk-infer --audio ref.wav \   --instruction "Say the following with the same voice: '...'" \   --output out_tts.wav --gen_seconds 6.0
+									198 container
+										199 text A800-80GB、bf16 实测峰值显存约 24.8–25.0 GiB，加  --cpu_offload （仅 CUDA）约 16.8–17.0 GiB；另提供  auk-gradio  Web Demo（默认端口 7860）与 ComfyUI 节点。
+									200 container
+										201 container
+											202 text T04 Qwen/Qwen3-ASR-1.7B  语音识别 · 1.7B · BF16 · 4.7 GB
+									203 container
+										204 text 介绍： 通义千问语音识别模型，依托基座 Qwen3-Omni 的音频理解能力，支持 30 种语言与 22 种中文方言的语种识别和语音识别（含多国英语口音），可转写语音、歌声及带背景音乐的歌曲；单模型统一流式 / 离线推理，支持长音频。README 称其达到开源 ASR 最优水平、可比肩最强商用 API。部分 WER：Librispeech clean / other 1.63 / 3.38、WenetSpeech net / meeting 4.97 / 5.88、AISHELL-2 2.71、Fleurs-zh 2.41。
+									205 container
+										206 text 规格： Qwen3ASRForConditionalGeneration （ qwen3_asr ，音频编码器 + 文本解码器，合计 2.35B 参数）；BF16，2 个分片约 4.7 GB；Apache-2.0。另有 Transformers 原生格式 
+										207 link Description: Qwen/Qwen3-ASR-1.7B-hf, Value: modelscope.cn/models/Qwen/Qwen3-ASR-1.7B-hf
+										208 text （需 transformers ≥ 5.13.0）。
+						142 container docCommentContainer
+							143 container
+								144 text 评论（0）
+								145 image
+						146 button
+							147 image
+						215 container
+							216 text 3 3 3  人点赞
+						210 container
+							211 container ​
+								212 text 输入评论
+							213 button
+								214 image
+				148 container
+					149 menu
+						150 container
+							151 上传日志
+								152 text 上传日志
+							153 联系客服
+								154 text 联系客服
+							155 功能更新
+								156 text 功能更新
+							157 帮助中心
+								158 text 帮助中心
+							159 快捷键
+								160 text 快捷键
+		161 container ccm-global-overlay-container
+			162 container
+				163 container
+					164 text field (settable)
+					165 text 加载中...
+		166 text entry area  
+		167 text entry area  
+		168 AXWebArea about:blank
+		217 container
+			218 container T04 Tencent-Hunyuan/AuK 1.5B · 语音生成 / 编辑 · BF16 约 3.4 GB
+				219 text T04 Tencent-Hunyuan/AuK 1.5B · 语音生成 / 编辑 · BF16 约 3.4 GB
+			220 image
+
+The focused UI element is 173 link Description: T04 Tencent-Hunyuan/AuK 1.5B · 语音生成 / 编辑 · BF16 约 3.4 GB, URL: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#MKWDdWR7pocKn5x7CbQcIIdlnEi

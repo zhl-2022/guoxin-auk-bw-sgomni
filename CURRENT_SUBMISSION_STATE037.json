@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-28T15:25:07.671451+00:00",
+  "updated_utc": "2026-10-28T16:55:13.236829+00:00",
   "model": "auk",
   "source_parent_commit": "4abf67046a0377392be781ad0cb92c75a1a339fd",
   "branch": "codex/submission-ready037-final",
@@ -13,7 +13,7 @@
   "all_prior_tracked_paths_retained": true,
   "all_prior_changed_files_preserved_byte_for_byte": true,
   "all_existing_Python_and_shell_bytes_unchanged": true,
-  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-auk-bw-sgomni-final-session032",
+  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-auk-bw-sgomni-final-session037",
   "image_id": "2115317990002249729",
   "image_url": "https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115317990002249729",
   "image_tag": "dtk2604-auk-base-final-20261028",
@@ -21,5 +21,18 @@
   "reviewer_access_method_closed": false,
   "submission_ready": false,
   "submitted": false,
-  "new_GPU_model_requests_in_material_assembly": 0
+  "new_GPU_model_requests_in_material_assembly": 0,
+  "final_fresh_fixed_venv_creation_actual": true,
+  "final_preparation_functional_acceptance_complete": true,
+  "only_ANTLR_metadata_pair_exception_with56_runtime_SHA": true,
+  "root_template_verify_dispatch_corrected": true,
+  "original_core327_unchanged": true,
+  "scoring_commands_complete": "publisher037/SCORING-REPLAY.md",
+  "full_1200_accuracy_and96_performance_preserved": true,
+  "new_SIM_wrapper_plan_only_tested": true,
+  "new_SIM_neural_scoring_claimed": false,
+  "T04_specific_native_deployment_documented": true,
+  "official_framework_exception_obtained": false,
+  "actual_form_model_framework_match_pending": true,
+  "source_publication_pending": true
 }

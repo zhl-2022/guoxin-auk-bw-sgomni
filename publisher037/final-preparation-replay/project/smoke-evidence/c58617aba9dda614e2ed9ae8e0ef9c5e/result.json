@@ -1,0 +1,82 @@
+{
+  "started_utc": "2026-10-28T16:38:41.721844+00:00",
+  "scope": "three-second development WAV only",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "health": {
+    "url": "http://127.0.0.1:30139/health",
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "date": "Wed, 28 Oct 2026 16:38:41 GMT",
+      "server": "uvicorn",
+      "content-length": "348",
+      "content-type": "application/json",
+      "connection": "close"
+    },
+    "body_bytes": 348,
+    "body_sha256": "3f4066ad8325e179fa418b9822f9c424bc8672d9fb61fe5a38f5fb9b984ba286",
+    "wall_seconds": 0.007842706982046366
+  },
+  "models": {
+    "url": "http://127.0.0.1:30139/v1/models",
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "date": "Wed, 28 Oct 2026 16:38:41 GMT",
+      "server": "uvicorn",
+      "content-length": "286",
+      "content-type": "application/json",
+      "connection": "close"
+    },
+    "body_bytes": 286,
+    "body_sha256": "95739e238cd97ce0e0c82eaffd84a32b44cb06b0a160ee17d47ef681223f88ba",
+    "wall_seconds": 0.0056560589000582695
+  },
+  "speech": {
+    "url": "http://127.0.0.1:30139/v1/audio/speech",
+    "method": "POST",
+    "status": 200,
+    "headers": {
+      "date": "Wed, 28 Oct 2026 16:38:41 GMT",
+      "server": "uvicorn",
+      "content-disposition": "attachment; filename=\"speech.wav\"",
+      "x-request-id": "speech-c146fe5b-9a66-480d-86e7-d174261afe0f",
+      "x-finish-reason": "unknown",
+      "x-prompt-tokens": "50",
+      "x-completion-tokens": "150",
+      "x-sglang-omni-input-tokens": "50",
+      "x-sglang-omni-output-tokens": "150",
+      "x-sglang-omni-total-tokens": "200",
+      "x-engine-time": "8.3487",
+      "content-length": "144044",
+      "content-type": "audio/wav",
+      "connection": "close"
+    },
+    "body_bytes": 144044,
+    "body_sha256": "f09f7c5c862524c104cb4dc5a8b211ddcb4e1613c6ce5eace420a37ea31a4322",
+    "wall_seconds": 8.368630903307348
+  },
+  "wav": {
+    "container": "RIFF/WAVE",
+    "format_code": 1,
+    "bits_per_sample": 16,
+    "channels": 1,
+    "sample_rate": 24000,
+    "frames": 72000,
+    "duration_seconds": 3.0,
+    "finite_samples": true,
+    "peak_absolute": 0.209014892578125,
+    "rms": 0.04026129057963537,
+    "all_zero_samples": false,
+    "bytes": 144044,
+    "sha256": "f09f7c5c862524c104cb4dc5a8b211ddcb4e1613c6ce5eace420a37ea31a4322",
+    "scope": "audio_structure_only",
+    "semantic_quality_verified": false,
+    "GPU_verified": false,
+    "official_accuracy_pass": false
+  },
+  "passed": true,
+  "ended_utc": "2026-10-28T16:38:50.198422+00:00",
+  "output": "/root/private_data/guoxin-session037/auk-bootstrap-repair002/project/smoke-evidence/c58617aba9dda614e2ed9ae8e0ef9c5e"
+}

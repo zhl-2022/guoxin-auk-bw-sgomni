@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:30139/health",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "date": "Wed, 28 Oct 2026 16:38:41 GMT",
+    "server": "uvicorn",
+    "content-length": "348",
+    "content-type": "application/json",
+    "connection": "close"
+  },
+  "body_bytes": 348,
+  "body_sha256": "3f4066ad8325e179fa418b9822f9c424bc8672d9fb61fe5a38f5fb9b984ba286",
+  "wall_seconds": 0.007842706982046366
+}
