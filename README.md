@@ -8,6 +8,21 @@
 
 原模型与编码器20个保守快照文件、上游许可和字节身份见candidate/model-lock.json与model-acquisition-lock.json。所有实际推理的模型文件已逐个重算SHA或原Git blob身份，不替换其他检查点。最终新增数据盘模型/venv准备和交付封装，candidate的327个源码文件保持根入口与完整评测实际字节。
 
+### 最终提交材料绑定（Session037）
+
+原有全部资料保留；本次整理不重新采样、不改变推理或判分源码。实际发布版本和评审获取状态由 `CURRENT_SUBMISSION_STATE037.json` 及外部提交清单记录；尚未完成的门禁不写成通过。
+
+| 项目 | 固定引用 |
+| --- | --- |
+| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-auk-bw-sgomni-final-session032) |
+| SCNet镜像 | [实际镜像详情](https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115317990002249729) |
+| 固定镜像tag | `dtk2604-auk-base-final-20261028` |
+| 已实测前版代码 | `4abf67046a0377392be781ad0cb92c75a1a339fd` |
+| 本次材料分支 | `codex/submission-ready037-final`，以外部清单的完整commit为准 |
+
+本件实际为SG-Omni的AuK-only原生Torch兼容路径，未将它写成vLLM/SRT引擎已适配。模型×框架及中文CER/SIM协议的赛事适用性、最终环境准备路径和评审获取方式，仍按外部清单如实记录。
+
+
 ## 2. 环境配置
 
 超算华中一区A区，BW64GB×1；Torch实际设备探针为BW、count1、HIP6.3.26093。发行元数据为Torch2.10.0+das.opt1.dtk2604、TorchVision0.25.0+das、Transformers5.5.0、NumPy1.25.0，运行时torch.__version__显示2.10.0。vLLM0.18.1随基础环境存在，本模型的AuK-only路径不以vLLM/SRT为模型引擎。22个实际包版本和METADATA SHA在publisher032/expected-native-and-venv-packages.json，完整设备输出在env.log。

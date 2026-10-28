@@ -1,0 +1,25 @@
+{
+  "updated_utc": "2026-10-28T15:25:07.671451+00:00",
+  "model": "auk",
+  "source_parent_commit": "4abf67046a0377392be781ad0cb92c75a1a339fd",
+  "branch": "codex/submission-ready037-final",
+  "material_revision_prepared": true,
+  "material_changes": {
+    "README.md": {
+      "old_sha256": "8acd7cd2ab276e9c7ebb2607fad0f346aa2fa4ce1c51755538f8bdfa55bcd56e",
+      "new_sha256": "012763e7ab04bcbc75924fa5e864d31d04fe3673adfd9dd50c6f0247949283f1"
+    }
+  },
+  "all_prior_tracked_paths_retained": true,
+  "all_prior_changed_files_preserved_byte_for_byte": true,
+  "all_existing_Python_and_shell_bytes_unchanged": true,
+  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-auk-bw-sgomni-final-session032",
+  "image_id": "2115317990002249729",
+  "image_url": "https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115317990002249729",
+  "image_tag": "dtk2604-auk-base-final-20261028",
+  "new_SourceFind_revision_verified": false,
+  "reviewer_access_method_closed": false,
+  "submission_ready": false,
+  "submitted": false,
+  "new_GPU_model_requests_in_material_assembly": 0
+}
